@@ -328,10 +328,12 @@ catan.models.hexgrid = (function HexGrid_Namespace(){
 	}
 	
 	/**
+    Use this class to look up the numerical value of a EdgeDirection from JSON.
 	These are the edge values in clockwise order starting at NW.
 	They are in order so that modulo math makes this easy
 	Edge and Vertex Directions give you the edge and then the vertex in clockwise order
-    It&#x27;s really just an enumeration
+    It&#x27;s really just an enumeration. For example EdgeDirection[&quot;NW&quot;] or EdgeDirection.NW returns 0;
+    The possible edge directions are &quot;NW&quot;,&quot;N&quot;,&quot;NE&quot;,&quot;SE&quot;,&quot;S&quot;,&quot;SW&quot;
 	
 	@class EdgeDirection
 	*/
@@ -340,15 +342,17 @@ catan.models.hexgrid = (function HexGrid_Namespace(){
     
 	/**
 	These are simply a copy of EdgeDirections. They can be fed to a hexgrid.HexLocation to get 
-	the location of the hex next to it in that direction.It&#x27;s really just an enumeration.
+	the location of the hex next to it in that direction. It&#x27;s really just an enumeration.
 	@class HexDirection
 	*/
 	var HexDirection = EdgeDirection;
 	/**
+    Use this class to look up the numerical value of a VertexDirection from JSON.
 	These are the vertex values in clockwise order starting at NW.
 	They are in order so that modulo math makes this easy
 	Edge and Vertex Directions give you the edge and then the vertex in clockwise order.
-    It&#x27;s really just an enumeration
+    It&#x27;s really just an enumeration. For example VertexDirection[&quot;NW&quot;] or VertexDirection.NW returns 1;
+    The possible VertexDirection are &quot;W&quot;,&quot;NW&quot;,&quot;NE&quot;,&quot;E&quot;,&quot;SE&quot;,&quot;SW&quot;
 	@class VertexDirection
 	*/
     var vdLookup = [&quot;W&quot;,&quot;NW&quot;,&quot;NE&quot;,&quot;E&quot;,&quot;SE&quot;,&quot;SW&quot;]
@@ -411,6 +415,7 @@ catan.models.hexgrid = (function HexGrid_Namespace(){
 			}
 			this.offsets = offsets;
 			this.hexes = hexes;
+            this.linkOverlaps()
 		};
         
         /**
@@ -460,8 +465,9 @@ catan.models.hexgrid = (function HexGrid_Namespace(){
 		
         /**
          Returns the hex at the give spot. If you used the &#x27;getRegular&#x27; function to make this hexgrid,
-          the hexLocation (0,0) will return the hex in the middle of the hex
+          the hexLocation (0,0) will return the hex in the middle of the hexgrid.
         @method getHex
+        @param {hexgrid.HexLocation} hexLocation - the location of the hex you want.
 		@return {hexgrid.BasicHex}
 		*/
 		HexGrid.prototype.getHex = function(hexLocation){
@@ -489,14 +495,8 @@ catan.models.hexgrid = (function HexGrid_Namespace(){
             })
         }
         
-        /**
-         This method should link equivalent spots in hexes - 
-         ie if three hexes share the same vertex, this should make it so 
-         the corresponding vertex in each hex is a reference to the same object
-         Possibly buggy.
-        @method getHex
-		@return {hexgrid.BasicHex}
-		*/
+        /* This method is called to link the overlapping vertexes and edges within the hex grid
+         */
         HexGrid.prototype.linkOverlaps = function(){
             linkContainers(this.getHexes(),BasicHex.prototype.getVertexes)
             linkContainers(this.getHexes(),BasicHex.prototype.getEdges)
@@ -504,7 +504,7 @@ catan.models.hexgrid = (function HexGrid_Namespace(){
         
         /**
          Returns true if there is a hex at the given location
-        @method getHex
+        @method hasHex
         @param {hexgrid.HexLocation} hexLocation
 		@return {Boolean}
 		*/		
@@ -515,8 +515,8 @@ catan.models.hexgrid = (function HexGrid_Namespace(){
         /**
          Returns a list of hex locations that point to all the hexs 
          currently stored in the grid
-        @method getHex
-		@return {hexgrid.HexLocation} [Array]
+        @method getAllLocations
+		@return {[hexgrid.HexLocation]}
 		*/	
 		HexGrid.prototype.getAllLocations = function (){
 			var locations = [];
@@ -547,7 +547,7 @@ catan.models.hexgrid = (function HexGrid_Namespace(){
          * returning true iff the container has a road
          * 
          * @method getEdges
-         * @return {hexgrid.BaseContainer} [Array] all the edges that have roads in the hexgrid
+         * @return {[hexgrid.BaseContainer]} all the edges that have roads in the hexgrid - the return type is actually your custom edge class
          */
         HexGrid.prototype.getEdges = function(){
             return getValid(this.hexGrid.getHexes(),&quot;getValidEdges&quot;)
@@ -555,10 +555,11 @@ catan.models.hexgrid = (function HexGrid_Namespace(){
         
         /**
          * This method depends on the class derived from BaseContainer for a Vertex implementing the method &#x27;isOccupied&#x27;
-         * returning true iff the container has a city/settlement
+         * returning true iff the container has a city/settlement.
+         * Note, you&#x27;ll still have to a method on the edge/vertex itself to get the city or settlement from it.
          * 
          * @method getVertexes
-         * @return {hexgrid.BaseContainer} [Array] All the vertexes that have cities/settlements in the hexgrid
+         * @return {[hexgrid.BaseContainer]} All the vertexes that have cities/settlements in the hexgrid - the return type is actually your custom vertex class
          */
         HexGrid.prototype.getVertexes = function(){
             return getValid(this.hexGrid.getHexes(),&quot;getValidVertexes&quot;)
@@ -585,10 +586,25 @@ catan.models.hexgrid = (function HexGrid_Namespace(){
 		core.defineProperty(HexLocation.prototype,&quot;x&quot;);
 		core.defineProperty(HexLocation.prototype,&quot;y&quot;);		
 		
-		HexLocation.prototype.equals =  function(otherHex){
-			return (this.getX() == otherHex.getX() &amp;&amp; otherHex.getY() == this.getY()); 
+        
+        /**
+          This represents a location of a hex on a hex grid.
+         
+            @method equals
+            @param {hexgrid.HexLocation} otherLocation
+            @return boolean Returns true if the other location has the same x,y
+        */
+		HexLocation.prototype.equals =  function(otherLocation){
+			return (this.getX() == otherLocation.getX() &amp;&amp; otherLocation.getY() == this.getY()); 
 		}
 		
+        /**
+          This represents a location of a hex on a hex grid.
+         
+            @method getNeighborLocation
+            @param {[HexDirection]} hexDirection
+            @return hexgrid.HexLocation Returns a location next to this one, in the direction of the &#x27;hexDirection&#x27; given
+        */
 		HexLocation.prototype.getNeighborLocation = function getNeighborLocation(hexDirection){
 			var x,  y , z = 0;
 		    switch (hexDirection) {
@@ -711,7 +727,7 @@ catan.models.hexgrid = (function HexGrid_Namespace(){
         		
         /**
 		Returns a unique string id for this location
-        All locations in any equivalence group will have the same  
+        All locations in any equivalence group will have the same id string.  
 		
         @method getIDString
 		@return {String}

@@ -534,7 +534,7 @@
             },
             "tag": "module",
             "file": "student/gameplay/js/model/hexgrid_impl.js",
-            "line": 90,
+            "line": 80,
             "description": "This module contains the top-level client model class"
         },
         "catan.models.hexgrid": {
@@ -560,7 +560,7 @@
             "module": "catan.models",
             "namespace": "",
             "file": "student/gameplay/js/model/hexgrid.js",
-            "line": 661,
+            "line": 677,
             "description": "This is the namespace for what abstracts the hex grid interface:\n\tlocations, the hex grid, directions and a basic hex class"
         },
         "catan.misc": {
@@ -1303,7 +1303,7 @@
             "namespace": "hexgrid",
             "file": "student/gameplay/js/model/hexgrid.js",
             "line": 108,
-            "description": "These are the edge values in clockwise order starting at NW.\nThey are in order so that modulo math makes this easy\nEdge and Vertex Directions give you the edge and then the vertex in clockwise order\n    It's really just an enumeration"
+            "description": "Use this class to look up the numerical value of a EdgeDirection from JSON.\n\tThese are the edge values in clockwise order starting at NW.\n\tThey are in order so that modulo math makes this easy\n\tEdge and Vertex Directions give you the edge and then the vertex in clockwise order\nIt's really just an enumeration. For example EdgeDirection[\"NW\"] or EdgeDirection.NW returns 0;\nThe possible edge directions are \"NW\",\"N\",\"NE\",\"SE\",\"S\",\"SW\""
         },
         "hexgrid.HexDirection": {
             "name": "hexgrid.HexDirection",
@@ -1317,8 +1317,8 @@
             "submodule": "catan.models.hexgrid",
             "namespace": "hexgrid",
             "file": "student/gameplay/js/model/hexgrid.js",
-            "line": 119,
-            "description": "These are simply a copy of EdgeDirections. They can be fed to a hexgrid.HexLocation to get \nthe location of the hex next to it in that direction.It's really just an enumeration."
+            "line": 121,
+            "description": "These are simply a copy of EdgeDirections. They can be fed to a hexgrid.HexLocation to get \nthe location of the hex next to it in that direction. It's really just an enumeration."
         },
         "hexgrid.VertexDirection": {
             "name": "hexgrid.VertexDirection",
@@ -1332,8 +1332,8 @@
             "submodule": "catan.models.hexgrid",
             "namespace": "hexgrid",
             "file": "student/gameplay/js/model/hexgrid.js",
-            "line": 125,
-            "description": "These are the vertex values in clockwise order starting at NW.\nThey are in order so that modulo math makes this easy\nEdge and Vertex Directions give you the edge and then the vertex in clockwise order.\n    It's really just an enumeration"
+            "line": 127,
+            "description": "Use this class to look up the numerical value of a VertexDirection from JSON.\n\tThese are the vertex values in clockwise order starting at NW.\n\tThey are in order so that modulo math makes this easy\n\tEdge and Vertex Directions give you the edge and then the vertex in clockwise order.\nIt's really just an enumeration. For example VertexDirection[\"NW\"] or VertexDirection.NW returns 1;\nThe possible VertexDirection are \"W\",\"NW\",\"NE\",\"E\",\"SE\",\"SW\""
         },
         "hexgrid.HexGrid": {
             "name": "hexgrid.HexGrid",
@@ -1347,7 +1347,7 @@
             "submodule": "catan.models.hexgrid",
             "namespace": "hexgrid",
             "file": "student/gameplay/js/model/hexgrid.js",
-            "line": 136,
+            "line": 140,
             "description": "This class will never be directly used by anything other than the map.\nIt's purpose is to present an array-like interface for hex storage, \nas well as reducing wasted space that naturally incurs. It also provides\na clean interface for generating the initial tiles.\n\nThis takes the length of 3 connected sides and returns a hexagonal\ngrid object. Of necessity, two of the three dimensions must be \nthe same - this generates a hexagon that is symmetrical along two axis.\nThis is perhaps overkill, but the implementation provides insight into \nhow hexagonal grids work.\n\nYou'll want to use the static method 'getRegular' which takes radius and the prototype of your hex",
             "is_constructor": 1,
             "params": [
@@ -1395,7 +1395,7 @@
             "submodule": "catan.models.hexgrid",
             "namespace": "hexgrid",
             "file": "student/gameplay/js/model/hexgrid.js",
-            "line": 348,
+            "line": 349,
             "description": "This represents a location of a hex on a hex grid.",
             "is_constructor": 1,
             "params": [
@@ -1423,7 +1423,7 @@
             "submodule": "catan.models.hexgrid",
             "namespace": "hexgrid",
             "file": "student/gameplay/js/model/hexgrid.js",
-            "line": 402,
+            "line": 418,
             "description": "This is the base class for VertexLocation and EdgeLocation\n        * \n        * -- This is NOT instantiable by itself --\n        *",
             "is_constructor": 1
         },
@@ -1439,7 +1439,7 @@
             "submodule": "catan.models.hexgrid",
             "namespace": "hexgrid",
             "file": "student/gameplay/js/model/hexgrid.js",
-            "line": 502,
+            "line": 518,
             "description": "This class represent an edge location. It consists of a hex location\nand an edge direction\n    This takes a hex location and a direction. Alternatively you can use\n     (x,y,direction)",
             "is_constructor": 1,
             "params": [
@@ -1468,7 +1468,7 @@
             "submodule": "catan.models.hexgrid",
             "namespace": "hexgrid",
             "file": "student/gameplay/js/model/hexgrid.js",
-            "line": 579,
+            "line": 595,
             "description": "This class represents a vertex location. It consists of a hex location\nand a vertex direction. Instead of (hexLocation, direction) you can use\n    (x, y, direction).",
             "is_constructor": 1,
             "params": [
@@ -1496,7 +1496,7 @@
             "submodule": "catan.models.hexgrid",
             "namespace": "hexgrid",
             "file": "student/gameplay/js/model/hexgrid.js",
-            "line": 661,
+            "line": 677,
             "description": "This class represents a base container (to be used for Edge or Vertex). You'll need to pass a child-class (the constructor/\n    class, not an instance) to the BasicHex constructor so that it knows how to store stuff. This is the default implementation\n    which provides the the abstract the minimum functions. Extends this class to make an Edge/Vertex container class.",
             "is_constructor": 1
         },
@@ -1527,7 +1527,7 @@
             "module": "catan.models",
             "namespace": "models",
             "file": "student/gameplay/js/model/hexgrid_impl.js",
-            "line": 90,
+            "line": 80,
             "description": "This class represents a Hex. You may add any methods that you need (e.g., to get the resource/hex type, etc.)\n    \n    In order to work with the hexgrid, this class must extend hexgrid.BasicHex (already done in the code). You also need to implement\n    a CatanVertex and CatanEdge classes (stubs are provided in this file).  Look at their documentation to see what needs to be done there.\n     \n    The hexgrid will be passed an instance of this class to use as a model, and will pull the constructor from that instance. \n    (The core.forceInherit sets the constructor, in case you are curious how that works)",
             "is_constructor": 1,
             "params": [
@@ -2952,7 +2952,7 @@
         },
         {
             "file": "student/gameplay/js/model/hexgrid.js",
-            "line": 194,
+            "line": 199,
             "description": "This calls the HexGrid conructor with the right arguements given a radius to \n create a regular hexgrid, with the reference 0,0 pointing to the middle",
             "itemtype": "method",
             "name": "getRegular",
@@ -2980,7 +2980,7 @@
         },
         {
             "file": "student/gameplay/js/model/hexgrid.js",
-            "line": 212,
+            "line": 217,
             "description": "Returns an array of all the hexes. It's useful in order to iterate over them (using [].map)",
             "itemtype": "method",
             "name": "getHexes",
@@ -2994,25 +2994,17 @@
         },
         {
             "file": "student/gameplay/js/model/hexgrid.js",
-            "line": 239,
-            "description": "Returns the hex at the give spot. If you used the 'getRegular' function to make this hexgrid,\n the hexLocation (0,0) will return the hex in the middle of the hex",
+            "line": 244,
+            "description": "Returns the hex at the give spot. If you used the 'getRegular' function to make this hexgrid,\n the hexLocation (0,0) will return the hex in the middle of the hexgrid.",
             "itemtype": "method",
             "name": "getHex",
-            "return": {
-                "description": "",
-                "type": "hexgrid.BasicHex"
-            },
-            "class": "hexgrid.HexGrid",
-            "module": "catan.models",
-            "submodule": "catan.models.hexgrid",
-            "namespace": "hexgrid"
-        },
-        {
-            "file": "student/gameplay/js/model/hexgrid.js",
-            "line": 270,
-            "description": "This method should link equivalent spots in hexes - \nie if three hexes share the same vertex, this should make it so \nthe corresponding vertex in each hex is a reference to the same object\nPossibly buggy.",
-            "itemtype": "method",
-            "name": "getHex",
+            "params": [
+                {
+                    "name": "hexLocation",
+                    "description": "- the location of the hex you want.",
+                    "type": "hexgrid.HexLocation"
+                }
+            ],
             "return": {
                 "description": "",
                 "type": "hexgrid.BasicHex"
@@ -3027,7 +3019,7 @@
             "line": 283,
             "description": "Returns true if there is a hex at the given location",
             "itemtype": "method",
-            "name": "getHex",
+            "name": "hasHex",
             "params": [
                 {
                     "name": "hexLocation",
@@ -3049,10 +3041,10 @@
             "line": 293,
             "description": "Returns a list of hex locations that point to all the hexs \ncurrently stored in the grid",
             "itemtype": "method",
-            "name": "getHex",
+            "name": "getAllLocations",
             "return": {
-                "description": "[Array]",
-                "type": "hexgrid.HexLocation"
+                "description": "",
+                "type": "[hexgrid.HexLocation]"
             },
             "class": "hexgrid.HexGrid",
             "module": "catan.models",
@@ -3066,8 +3058,8 @@
             "itemtype": "method",
             "name": "getEdges",
             "return": {
-                "description": "[Array] all the edges that have roads in the hexgrid",
-                "type": "hexgrid.BaseContainer"
+                "description": "all the edges that have roads in the hexgrid - the return type is actually your custom edge class",
+                "type": "[hexgrid.BaseContainer]"
             },
             "class": "hexgrid.HexGrid",
             "module": "catan.models",
@@ -3077,12 +3069,12 @@
         {
             "file": "student/gameplay/js/model/hexgrid.js",
             "line": 334,
-            "description": "This method depends on the class derived from BaseContainer for a Vertex implementing the method 'isOccupied'\nreturning true iff the container has a city/settlement",
+            "description": "This method depends on the class derived from BaseContainer for a Vertex implementing the method 'isOccupied'\nreturning true iff the container has a city/settlement.\nNote, you'll still have to a method on the edge/vertex itself to get the city or settlement from it.",
             "itemtype": "method",
             "name": "getVertexes",
             "return": {
-                "description": "[Array] All the vertexes that have cities/settlements in the hexgrid",
-                "type": "hexgrid.BaseContainer"
+                "description": "All the vertexes that have cities/settlements in the hexgrid - the return type is actually your custom vertex class",
+                "type": "[hexgrid.BaseContainer]"
             },
             "class": "hexgrid.HexGrid",
             "module": "catan.models",
@@ -3091,7 +3083,49 @@
         },
         {
             "file": "student/gameplay/js/model/hexgrid.js",
-            "line": 436,
+            "line": 368,
+            "description": "This represents a location of a hex on a hex grid.",
+            "itemtype": "method",
+            "name": "equals",
+            "params": [
+                {
+                    "name": "otherLocation",
+                    "description": "",
+                    "type": "hexgrid.HexLocation"
+                }
+            ],
+            "return": {
+                "description": "boolean Returns true if the other location has the same x,y"
+            },
+            "class": "hexgrid.HexLocation",
+            "module": "catan.models",
+            "submodule": "catan.models.hexgrid",
+            "namespace": "hexgrid"
+        },
+        {
+            "file": "student/gameplay/js/model/hexgrid.js",
+            "line": 379,
+            "description": "This represents a location of a hex on a hex grid.",
+            "itemtype": "method",
+            "name": "getNeighborLocation",
+            "params": [
+                {
+                    "name": "hexDirection",
+                    "description": "",
+                    "type": "[HexDirection]"
+                }
+            ],
+            "return": {
+                "description": "hexgrid.HexLocation Returns a location next to this one, in the direction of the 'hexDirection' given"
+            },
+            "class": "hexgrid.HexLocation",
+            "module": "catan.models",
+            "submodule": "catan.models.hexgrid",
+            "namespace": "hexgrid"
+        },
+        {
+            "file": "student/gameplay/js/model/hexgrid.js",
+            "line": 452,
             "description": "Get the next logical location by traveling about the center ofthe hex in a clockwise direction",
             "itemtype": "method",
             "name": "rotateAboutHexCW",
@@ -3106,7 +3140,7 @@
         },
         {
             "file": "student/gameplay/js/model/hexgrid.js",
-            "line": 447,
+            "line": 463,
             "description": "Get the next logical location by traveling about the center of the hex in a counter-clockwise direction",
             "itemtype": "method",
             "name": "rotateAboutHexCCW",
@@ -3121,7 +3155,7 @@
         },
         {
             "file": "student/gameplay/js/model/hexgrid.js",
-            "line": 459,
+            "line": 475,
             "description": "Edge and VertexLocation's have class-specific implementations\n\nThis function should return all Locations that refer to this spot on the map",
             "itemtype": "method",
             "name": "getEquivalenceGroup",
@@ -3136,7 +3170,7 @@
         },
         {
             "file": "student/gameplay/js/model/hexgrid.js",
-            "line": 469,
+            "line": 485,
             "description": "Abstract function to be overridden in child-class",
             "itemtype": "method",
             "name": "getNeighborVertexes",
@@ -3151,7 +3185,7 @@
         },
         {
             "file": "student/gameplay/js/model/hexgrid.js",
-            "line": 477,
+            "line": 493,
             "description": "Abstract function to be overridden in child-class",
             "itemtype": "method",
             "name": "getConnectedEdges",
@@ -3166,8 +3200,8 @@
         },
         {
             "file": "student/gameplay/js/model/hexgrid.js",
-            "line": 490,
-            "description": "Returns a unique string id for this location\n        All locations in any equivalence group will have the same",
+            "line": 506,
+            "description": "Returns a unique string id for this location\n        All locations in any equivalence group will have the same id string.",
             "itemtype": "method",
             "name": "getIDString",
             "return": {
@@ -3181,7 +3215,7 @@
         },
         {
             "file": "student/gameplay/js/model/hexgrid.js",
-            "line": 526,
+            "line": 542,
             "description": "This function returns this Edge location as well as the edge location for\nthe other hex that this edge touches.",
             "itemtype": "method",
             "name": "getEquivalenceGroup",
@@ -3196,7 +3230,7 @@
         },
         {
             "file": "student/gameplay/js/model/hexgrid.js",
-            "line": 604,
+            "line": 620,
             "description": "This function returns this VertexLocation as well as the VertexLocation for\nthe other 2 hexes that this VertexLocation touches.",
             "itemtype": "method",
             "name": "getEquivalenceGroup",
@@ -3211,7 +3245,7 @@
         },
         {
             "file": "student/gameplay/js/model/hexgrid.js",
-            "line": 641,
+            "line": 657,
             "description": "Returns the three edge locations connected to this vertex location",
             "itemtype": "method",
             "name": "getConnectedEdges",
@@ -3226,7 +3260,7 @@
         },
         {
             "file": "student/gameplay/js/model/hexgrid.js",
-            "line": 649,
+            "line": 665,
             "description": "An alias for '.getConnectedEdges' - you could use it in tree traversal?",
             "itemtype": "method",
             "name": "getConnectedEdges",
@@ -3241,7 +3275,7 @@
         },
         {
             "file": "student/gameplay/js/model/hexgrid.js",
-            "line": 671,
+            "line": 687,
             "description": "This function should return true if this edge or vertex is occupied. (ie it contains a city, settlement or edge)",
             "itemtype": "method",
             "name": "isOccupied",
@@ -4017,7 +4051,7 @@
         },
         {
             "file": "student/gameplay/js/trading/MaritimeController.js",
-            "line": 68,
+            "line": 72,
             "itemtype": "method",
             "name": "makeTrade",
             "return": {

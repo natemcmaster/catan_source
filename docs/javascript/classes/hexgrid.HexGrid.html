@@ -224,7 +224,7 @@
 
     
         <div class="foundat">
-            Defined in: <a href="../files/student_gameplay_js_model_hexgrid.js.html#l136"><code>student&#x2F;gameplay&#x2F;js&#x2F;model&#x2F;hexgrid.js:136</code></a>
+            Defined in: <a href="../files/student_gameplay_js_model_hexgrid.js.html#l140"><code>student&#x2F;gameplay&#x2F;js&#x2F;model&#x2F;hexgrid.js:140</code></a>
         </div>
     
 
@@ -329,7 +329,7 @@ how hexagonal grids work.</p>
             
         
         
-        <a href="../files/student_gameplay_js_model_hexgrid.js.html#l136"><code>student&#x2F;gameplay&#x2F;js&#x2F;model&#x2F;hexgrid.js:136</code></a>
+        <a href="../files/student_gameplay_js_model_hexgrid.js.html#l140"><code>student&#x2F;gameplay&#x2F;js&#x2F;model&#x2F;hexgrid.js:140</code></a>
         
         </p>
 
@@ -480,28 +480,14 @@ how hexagonal grids work.</p>
                     <ul class="index-list methods">
                         
                             <li class="index-item method">
+                                <a href="#method_getAllLocations">getAllLocations</a>
+
+                                
+                                
+                            </li>
+                        
+                            <li class="index-item method">
                                 <a href="#method_getEdges">getEdges</a>
-
-                                
-                                
-                            </li>
-                        
-                            <li class="index-item method">
-                                <a href="#method_getHex">getHex</a>
-
-                                
-                                
-                            </li>
-                        
-                            <li class="index-item method">
-                                <a href="#method_getHex">getHex</a>
-
-                                
-                                
-                            </li>
-                        
-                            <li class="index-item method">
-                                <a href="#method_getHex">getHex</a>
 
                                 
                                 
@@ -537,6 +523,13 @@ how hexagonal grids work.</p>
                                 
                             </li>
                         
+                            <li class="index-item method">
+                                <a href="#method_hasHex">hasHex</a>
+
+                                
+                                
+                            </li>
+                        
                     </ul>
                 </div>
             
@@ -553,6 +546,78 @@ how hexagonal grids work.</p>
                 <h2 class="off-left">Methods</h2>
 
                 
+                    <div id="method_getAllLocations" class="method item">
+    <h3 class="name"><code>getAllLocations</code></h3>
+
+    
+        <span class="paren">()</span>
+    
+
+    
+        <span class="returns-inline">
+            <span class="type"><a href="../classes/hexgrid.HexLocation.html" class="crosslink">[hexgrid.HexLocation]</a></span>
+        </span>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                Defined in
+                
+            
+        
+        
+        <a href="../files/student_gameplay_js_model_hexgrid.js.html#l293"><code>student&#x2F;gameplay&#x2F;js&#x2F;model&#x2F;hexgrid.js:293</code></a>
+        
+        </p>
+
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <p>Returns a list of hex locations that point to all the hexs 
+currently stored in the grid</p>
+
+    </div>
+
+    
+
+    
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                
+                    
+                        <span class="type"><a href="../classes/hexgrid.HexLocation.html" class="crosslink">[hexgrid.HexLocation]</a></span>:
+                    
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+                
                     <div id="method_getEdges" class="method item">
     <h3 class="name"><code>getEdges</code></h3>
 
@@ -562,7 +627,7 @@ how hexagonal grids work.</p>
 
     
         <span class="returns-inline">
-            <span class="type"><a href="../classes/hexgrid.BaseContainer.html" class="crosslink">hexgrid.BaseContainer</a></span>
+            <span class="type"><a href="../classes/hexgrid.BaseContainer.html" class="crosslink">[hexgrid.BaseContainer]</a></span>
         </span>
     
 
@@ -614,9 +679,9 @@ returning true iff the container has a road</p>
             <div class="returns-description">
                 
                     
-                        <span class="type"><a href="../classes/hexgrid.BaseContainer.html" class="crosslink">hexgrid.BaseContainer</a></span>:
+                        <span class="type"><a href="../classes/hexgrid.BaseContainer.html" class="crosslink">[hexgrid.BaseContainer]</a></span>:
                     
-                    <p>[Array] all the edges that have roads in the hexgrid</p>
+                    <p>all the edges that have roads in the hexgrid - the return type is actually your custom edge class</p>
 
                 
             </div>
@@ -631,7 +696,17 @@ returning true iff the container has a road</p>
     <h3 class="name"><code>getHex</code></h3>
 
     
-        <span class="paren">()</span>
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+            
+                <li class="arg">
+                    
+                        <code>hexLocation</code>
+                    
+                </li>
+            
+            </ul><span class="paren">)</span>
+        </div>
     
 
     
@@ -663,7 +738,7 @@ returning true iff the container has a road</p>
             
         
         
-        <a href="../files/student_gameplay_js_model_hexgrid.js.html#l239"><code>student&#x2F;gameplay&#x2F;js&#x2F;model&#x2F;hexgrid.js:239</code></a>
+        <a href="../files/student_gameplay_js_model_hexgrid.js.html#l244"><code>student&#x2F;gameplay&#x2F;js&#x2F;model&#x2F;hexgrid.js:244</code></a>
         
         </p>
 
@@ -675,10 +750,36 @@ returning true iff the container has a road</p>
 
     <div class="description">
         <p>Returns the hex at the give spot. If you used the &#39;getRegular&#39; function to make this hexgrid,
- the hexLocation (0,0) will return the hex in the middle of the hex</p>
+ the hexLocation (0,0) will return the hex in the middle of the hexgrid.</p>
 
     </div>
 
+    
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+            
+                <li class="param">
+                    
+                        <code class="param-name">hexLocation</code>
+                        <span class="type"><a href="../classes/hexgrid.HexLocation.html" class="crosslink">hexgrid.HexLocation</a></span>
+                    
+
+                    
+
+                    <div class="param-description">
+                        <ul>
+<li>the location of the hex you want.</li>
+</ul>
+
+                    </div>
+
+                    
+                </li>
+            
+            </ul>
+        </div>
     
 
     
@@ -699,8 +800,8 @@ returning true iff the container has a road</p>
 </div>
 
                 
-                    <div id="method_getHex" class="method item">
-    <h3 class="name"><code>getHex</code></h3>
+                    <div id="method_getHexes" class="method item">
+    <h3 class="name"><code>getHexes</code></h3>
 
     
         <span class="paren">()</span>
@@ -708,7 +809,7 @@ returning true iff the container has a road</p>
 
     
         <span class="returns-inline">
-            <span class="type"><a href="../classes/hexgrid.BasicHex.html" class="crosslink">hexgrid.BasicHex</a></span>
+            <span class="type"></span>
         </span>
     
 
@@ -735,7 +836,7 @@ returning true iff the container has a road</p>
             
         
         
-        <a href="../files/student_gameplay_js_model_hexgrid.js.html#l270"><code>student&#x2F;gameplay&#x2F;js&#x2F;model&#x2F;hexgrid.js:270</code></a>
+        <a href="../files/student_gameplay_js_model_hexgrid.js.html#l217"><code>student&#x2F;gameplay&#x2F;js&#x2F;model&#x2F;hexgrid.js:217</code></a>
         
         </p>
 
@@ -746,10 +847,7 @@ returning true iff the container has a road</p>
     </div>
 
     <div class="description">
-        <p>This method should link equivalent spots in hexes - 
-ie if three hexes share the same vertex, this should make it so 
-the corresponding vertex in each hex is a reference to the same object
-Possibly buggy.</p>
+        <p>Returns an array of all the hexes. It&#39;s useful in order to iterate over them (using [].map)</p>
 
     </div>
 
@@ -762,8 +860,8 @@ Possibly buggy.</p>
             <div class="returns-description">
                 
                     
-                        <span class="type"><a href="../classes/hexgrid.BasicHex.html" class="crosslink">hexgrid.BasicHex</a></span>:
-                    
+                    <p>hexgrid.BasicHex [Array]</p>
+
                 
             </div>
         </div>
@@ -773,8 +871,219 @@ Possibly buggy.</p>
 </div>
 
                 
-                    <div id="method_getHex" class="method item">
-    <h3 class="name"><code>getHex</code></h3>
+                    <div id="method_getRegular" class="method item">
+    <h3 class="name"><code>getRegular</code></h3>
+
+    
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+            
+                <li class="arg">
+                    
+                        <code>radius</code>
+                    
+                </li>
+            
+                <li class="arg">
+                    
+                        <code>hex</code>
+                    
+                </li>
+            
+            </ul><span class="paren">)</span>
+        </div>
+    
+
+    
+        <span class="returns-inline">
+            <span class="type"><a href="../classes/hexgrid.HexGrid.html" class="crosslink">hexgrid.HexGrid</a></span>
+        </span>
+    
+
+    
+
+    
+
+    
+
+    
+        <span class="flag static">static</span>
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                Defined in
+                
+            
+        
+        
+        <a href="../files/student_gameplay_js_model_hexgrid.js.html#l199"><code>student&#x2F;gameplay&#x2F;js&#x2F;model&#x2F;hexgrid.js:199</code></a>
+        
+        </p>
+
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <p>This calls the HexGrid conructor with the right arguements given a radius to 
+ create a regular hexgrid, with the reference 0,0 pointing to the middle</p>
+
+    </div>
+
+    
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+            
+                <li class="param">
+                    
+                        <code class="param-name">radius</code>
+                        <span class="type">Integer</span>
+                    
+
+                    
+
+                    <div class="param-description">
+                        <p>The radius of the map, including the center. 
+                       It&#39;s given in the json of the map. T
+                       The width of the map in hexes is equal to (2 * radius - 1)</p>
+
+                    </div>
+
+                    
+                </li>
+            
+                <li class="param">
+                    
+                        <code class="param-name">hex</code>
+                        <span class="type"><a href="../classes/hexgrid.BasicHex.html" class="crosslink">hexgrid.BasicHex</a></span>
+                    
+
+                    
+
+                    <div class="param-description">
+                        <p>A constructor of your custom hex class that you use to instantiate new hexes.
+                More copies are instantiated using the hex(.prototype).constructor property. So make sure you have it!
+                This should be your own custom hex class, which in it&#39;s constructor call the base hex constructor</p>
+
+                    </div>
+
+                    
+                </li>
+            
+            </ul>
+        </div>
+    
+
+    
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                
+                    
+                        <span class="type"><a href="../classes/hexgrid.HexGrid.html" class="crosslink">hexgrid.HexGrid</a></span>:
+                    
+                    <p>A newly initialized HexGrid</p>
+
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+                
+                    <div id="method_getVertexes" class="method item">
+    <h3 class="name"><code>getVertexes</code></h3>
+
+    
+        <span class="paren">()</span>
+    
+
+    
+        <span class="returns-inline">
+            <span class="type"><a href="../classes/hexgrid.BaseContainer.html" class="crosslink">[hexgrid.BaseContainer]</a></span>
+        </span>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                Defined in
+                
+            
+        
+        
+        <a href="../files/student_gameplay_js_model_hexgrid.js.html#l334"><code>student&#x2F;gameplay&#x2F;js&#x2F;model&#x2F;hexgrid.js:334</code></a>
+        
+        </p>
+
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <p>This method depends on the class derived from BaseContainer for a Vertex implementing the method &#39;isOccupied&#39;
+returning true iff the container has a city/settlement.
+Note, you&#39;ll still have to a method on the edge/vertex itself to get the city or settlement from it.</p>
+
+    </div>
+
+    
+
+    
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                
+                    
+                        <span class="type"><a href="../classes/hexgrid.BaseContainer.html" class="crosslink">[hexgrid.BaseContainer]</a></span>:
+                    
+                    <p>All the vertexes that have cities/settlements in the hexgrid - the return type is actually your custom vertex class</p>
+
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+                
+                    <div id="method_hasHex" class="method item">
+    <h3 class="name"><code>hasHex</code></h3>
 
     
         <div class="args">
@@ -868,361 +1177,6 @@ Possibly buggy.</p>
                     
                         <span class="type">Boolean</span>:
                     
-                
-            </div>
-        </div>
-    
-
-    
-</div>
-
-                
-                    <div id="method_getHex" class="method item">
-    <h3 class="name"><code>getHex</code></h3>
-
-    
-        <span class="paren">()</span>
-    
-
-    
-        <span class="returns-inline">
-            <span class="type"><a href="../classes/hexgrid.HexLocation.html" class="crosslink">hexgrid.HexLocation</a></span>
-        </span>
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    <div class="meta">
-        
-            
-                
-                <p>
-                
-                Defined in
-                
-            
-        
-        
-        <a href="../files/student_gameplay_js_model_hexgrid.js.html#l293"><code>student&#x2F;gameplay&#x2F;js&#x2F;model&#x2F;hexgrid.js:293</code></a>
-        
-        </p>
-
-
-        
-
-        
-    </div>
-
-    <div class="description">
-        <p>Returns a list of hex locations that point to all the hexs 
-currently stored in the grid</p>
-
-    </div>
-
-    
-
-    
-        <div class="returns">
-            <h4>Returns:</h4>
-
-            <div class="returns-description">
-                
-                    
-                        <span class="type"><a href="../classes/hexgrid.HexLocation.html" class="crosslink">hexgrid.HexLocation</a></span>:
-                    
-                    <p>[Array]</p>
-
-                
-            </div>
-        </div>
-    
-
-    
-</div>
-
-                
-                    <div id="method_getHexes" class="method item">
-    <h3 class="name"><code>getHexes</code></h3>
-
-    
-        <span class="paren">()</span>
-    
-
-    
-        <span class="returns-inline">
-            <span class="type"></span>
-        </span>
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    <div class="meta">
-        
-            
-                
-                <p>
-                
-                Defined in
-                
-            
-        
-        
-        <a href="../files/student_gameplay_js_model_hexgrid.js.html#l212"><code>student&#x2F;gameplay&#x2F;js&#x2F;model&#x2F;hexgrid.js:212</code></a>
-        
-        </p>
-
-
-        
-
-        
-    </div>
-
-    <div class="description">
-        <p>Returns an array of all the hexes. It&#39;s useful in order to iterate over them (using [].map)</p>
-
-    </div>
-
-    
-
-    
-        <div class="returns">
-            <h4>Returns:</h4>
-
-            <div class="returns-description">
-                
-                    
-                    <p>hexgrid.BasicHex [Array]</p>
-
-                
-            </div>
-        </div>
-    
-
-    
-</div>
-
-                
-                    <div id="method_getRegular" class="method item">
-    <h3 class="name"><code>getRegular</code></h3>
-
-    
-        <div class="args">
-            <span class="paren">(</span><ul class="args-list inline commas">
-            
-                <li class="arg">
-                    
-                        <code>radius</code>
-                    
-                </li>
-            
-                <li class="arg">
-                    
-                        <code>hex</code>
-                    
-                </li>
-            
-            </ul><span class="paren">)</span>
-        </div>
-    
-
-    
-        <span class="returns-inline">
-            <span class="type"><a href="../classes/hexgrid.HexGrid.html" class="crosslink">hexgrid.HexGrid</a></span>
-        </span>
-    
-
-    
-
-    
-
-    
-
-    
-        <span class="flag static">static</span>
-    
-
-    
-
-    
-
-    <div class="meta">
-        
-            
-                
-                <p>
-                
-                Defined in
-                
-            
-        
-        
-        <a href="../files/student_gameplay_js_model_hexgrid.js.html#l194"><code>student&#x2F;gameplay&#x2F;js&#x2F;model&#x2F;hexgrid.js:194</code></a>
-        
-        </p>
-
-
-        
-
-        
-    </div>
-
-    <div class="description">
-        <p>This calls the HexGrid conructor with the right arguements given a radius to 
- create a regular hexgrid, with the reference 0,0 pointing to the middle</p>
-
-    </div>
-
-    
-        <div class="params">
-            <h4>Parameters:</h4>
-
-            <ul class="params-list">
-            
-                <li class="param">
-                    
-                        <code class="param-name">radius</code>
-                        <span class="type">Integer</span>
-                    
-
-                    
-
-                    <div class="param-description">
-                        <p>The radius of the map, including the center. 
-                       It&#39;s given in the json of the map. T
-                       The width of the map in hexes is equal to (2 * radius - 1)</p>
-
-                    </div>
-
-                    
-                </li>
-            
-                <li class="param">
-                    
-                        <code class="param-name">hex</code>
-                        <span class="type"><a href="../classes/hexgrid.BasicHex.html" class="crosslink">hexgrid.BasicHex</a></span>
-                    
-
-                    
-
-                    <div class="param-description">
-                        <p>A constructor of your custom hex class that you use to instantiate new hexes.
-                More copies are instantiated using the hex(.prototype).constructor property. So make sure you have it!
-                This should be your own custom hex class, which in it&#39;s constructor call the base hex constructor</p>
-
-                    </div>
-
-                    
-                </li>
-            
-            </ul>
-        </div>
-    
-
-    
-        <div class="returns">
-            <h4>Returns:</h4>
-
-            <div class="returns-description">
-                
-                    
-                        <span class="type"><a href="../classes/hexgrid.HexGrid.html" class="crosslink">hexgrid.HexGrid</a></span>:
-                    
-                    <p>A newly initialized HexGrid</p>
-
-                
-            </div>
-        </div>
-    
-
-    
-</div>
-
-                
-                    <div id="method_getVertexes" class="method item">
-    <h3 class="name"><code>getVertexes</code></h3>
-
-    
-        <span class="paren">()</span>
-    
-
-    
-        <span class="returns-inline">
-            <span class="type"><a href="../classes/hexgrid.BaseContainer.html" class="crosslink">hexgrid.BaseContainer</a></span>
-        </span>
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    <div class="meta">
-        
-            
-                
-                <p>
-                
-                Defined in
-                
-            
-        
-        
-        <a href="../files/student_gameplay_js_model_hexgrid.js.html#l334"><code>student&#x2F;gameplay&#x2F;js&#x2F;model&#x2F;hexgrid.js:334</code></a>
-        
-        </p>
-
-
-        
-
-        
-    </div>
-
-    <div class="description">
-        <p>This method depends on the class derived from BaseContainer for a Vertex implementing the method &#39;isOccupied&#39;
-returning true iff the container has a city/settlement</p>
-
-    </div>
-
-    
-
-    
-        <div class="returns">
-            <h4>Returns:</h4>
-
-            <div class="returns-description">
-                
-                    
-                        <span class="type"><a href="../classes/hexgrid.BaseContainer.html" class="crosslink">hexgrid.BaseContainer</a></span>:
-                    
-                    <p>[Array] All the vertexes that have cities/settlements in the hexgrid</p>
-
                 
             </div>
         </div>
