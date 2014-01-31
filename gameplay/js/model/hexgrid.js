@@ -154,10 +154,10 @@ catan.models.hexgrid = (function HexGrid_Namespace(){
     @param {Integer} rDiagonal The length of the lower left diagonal edge in tiles
     @param {Integer} x0 The x offset from the lower left corner for to place (0,0)
     @param {Integer} y0 The y offset from the lower left corner to place (0,0)
-    @param {hexgrid.BasicHex} hex The default hex that will be used to populate the grid. 
+    @param {hexgrid.BasicHex} hexClass The constructor for a hex. 
     */
 	var HexGrid = (function HexGridClass(){
-		function HexGrid(bWidth,lDiagonal,rDiagonal,x0,y0,hex){
+		function HexGrid(bWidth,lDiagonal,rDiagonal,x0,y0,hexClass){
 			// This function assumes that there is symmetry along at least two axis
 			// in otherwords bw == ld OR ld == rd OR rd == bw
 			var hexes = [];
@@ -180,7 +180,7 @@ catan.models.hexgrid = (function HexGrid_Namespace(){
 				lengths.push(length);
 				var currentLine = [];
 				for (var cellCount = 0; cellCount < length; cellCount++){
-					var hexToAdd = new hex.constructor(this._getLocation(offset,cellCount,count));
+					var hexToAdd = new hexClass(this._getLocation(offset,cellCount,count));
 					hexToAdd.setLocation(this._getLocation(offset,cellCount, count));
 					currentLine.push(hexToAdd);
 				}
@@ -199,13 +199,13 @@ catan.models.hexgrid = (function HexGrid_Namespace(){
 		@param {Integer} radius The radius of the map, including the center. 
                                 It's given in the json of the map. T
                                 The width of the map in hexes is equal to (2 * radius - 1)
-		@param {hexgrid.BasicHex} hex An instance of the base hex to be used as a template for all the hexes in the grid.
+		@param {hexgrid.BasicHex} hex A constructor of your custom hex class that you use to instantiate new hexes.
                          More copies are instantiated using the hex(.prototype).constructor property. So make sure you have it!
                          This should be your own custom hex class, which in it's constructor call the base hex constructor
 		@return {hexgrid.HexGrid} A newly initialized HexGrid
 		*/
-        HexGrid.getRegular = function getRegularHexgrid(radius,hex){
-            return new HexGrid(radius, radius, radius, radius-1,radius-1,hex);
+        HexGrid.getRegular = function getRegularHexgrid(radius,hexClass){
+            return new HexGrid(radius, radius, radius, radius-1,radius-1,hexClass);
         }
         
         
