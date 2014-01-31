@@ -1,3 +1,4 @@
+//STUDENT-EDITABLE-BEGIN
 /**
 	This module contains the top-level client model class
 	

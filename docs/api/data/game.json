@@ -13,7 +13,14 @@
           "notes": "This (like the other rest api calls in this section) requires a valid game cookie to be set. It returns a json model of the current game set in your coookie.",
           "responseClass": "ClientModel",
           "nickname": "login",
-          "parameters": []
+          "parameters": [
+            {
+              "name":"version",
+              "paramType": "form",
+              "dataType": "integer",
+              "description":"The version number of this model. It goes up by one for each command that is applied. If you send this parameter you will get a model back iff the model is newer than the version number you sent. Otherwise it sends you the string \"true\" to let you know your model is up to date."
+            }
+          ]
         }
       ]
     },
@@ -408,7 +415,7 @@
       }
     },
     "TradeOffer": {
-      "id": "HexLocation",
+      "id": "TradeOffer",
       "required":["sender","receiver"],
       "properties": {
         "sender": { 
@@ -473,7 +480,7 @@
     },
     "Hex": {
       "id": "Hex",
-      "required":["location","edges","vertexes"],
+      "required":["location","edges","vertexes","isLand"],
       "properties": {
         "location": {
           "type": "HexLocation"
@@ -489,6 +496,21 @@
           "items": {
             "$ref": "Vertex"
           }
+        },
+        "isLand":{
+          "type": "boolean",
+          "description": "Whether this is a land piece (desert or resource) or if it's not (water)"
+        },
+        "landType": {
+          "type": "string",
+          "description": "What resource this tile gives - it's only here if the tile is land and not desert.",
+          "enum": [
+            "Wood",
+            "Brick",
+            "Sheep",
+            "Wheat",
+            "Ore"
+          ]
         }
       }
     },

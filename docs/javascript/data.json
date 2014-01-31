@@ -449,7 +449,7 @@
             },
             "tag": "module",
             "file": "student/gameplay/js/comms_box/CommView.js",
-            "line": 125,
+            "line": 127,
             "description": "This is the namespace for the communication classes (log and chat)"
         },
         "catan.devCards": {
@@ -466,7 +466,7 @@
             },
             "tag": "module",
             "file": "student/gameplay/js/development_cards/CardOverlay.js",
-            "line": 25,
+            "line": 27,
             "description": "This is the namespace for development cards"
         },
         "catan.discard": {
@@ -482,7 +482,7 @@
             },
             "tag": "module",
             "file": "student/gameplay/js/discard/DiscardOverlay.js",
-            "line": 18,
+            "line": 20,
             "description": "This is the namespace for discarding cards"
         },
         "catan.map": {
@@ -504,7 +504,7 @@
             },
             "tag": "module",
             "file": "student/gameplay/js/map/RobberOverlay.js",
-            "line": 22,
+            "line": 24,
             "description": "This this contains interfaces used by the map and robber views"
         },
         "catan.models": {
@@ -534,7 +534,7 @@
             },
             "tag": "module",
             "file": "student/gameplay/js/model/hexgrid_impl.js",
-            "line": 80,
+            "line": 81,
             "description": "This module contains the top-level client model class"
         },
         "catan.models.hexgrid": {
@@ -560,7 +560,7 @@
             "module": "catan.models",
             "namespace": "",
             "file": "student/gameplay/js/model/hexgrid.js",
-            "line": 677,
+            "line": 679,
             "description": "This is the namespace for what abstracts the hex grid interface:\n\tlocations, the hex grid, directions and a basic hex class"
         },
         "catan.misc": {
@@ -578,7 +578,7 @@
             },
             "tag": "module",
             "file": "student/gameplay/js/view_basics/WaitOverlay.js",
-            "line": 15,
+            "line": 17,
             "description": "This is the namespace to hold the base classes"
         },
         "catan.points": {
@@ -594,7 +594,7 @@
             },
             "tag": "module",
             "file": "student/gameplay/js/points/PointsView.js",
-            "line": 18,
+            "line": 20,
             "description": "This is the namespace for point display"
         },
         "catan.resources": {
@@ -610,7 +610,7 @@
             },
             "tag": "module",
             "file": "student/gameplay/js/resources/ResourcesView.js",
-            "line": 24,
+            "line": 26,
             "description": "This is the namespace for resources"
         },
         "catan.roll": {
@@ -627,7 +627,7 @@
             },
             "tag": "module",
             "file": "student/gameplay/js/roll/RollResultOverlay.js",
-            "line": 22,
+            "line": 24,
             "description": "This is the namespace the rolling interface"
         },
         "catan.setup": {
@@ -642,7 +642,7 @@
             },
             "tag": "module",
             "file": "student/gameplay/js/setup/SetupRoundController.js",
-            "line": 14,
+            "line": 15,
             "description": "This is the namespace for the intitial game round"
         },
         "catan.trade": {
@@ -664,7 +664,7 @@
                 "maritime": 1
             },
             "file": "student/gameplay/js/trading/MaritimeView.js",
-            "line": 25
+            "line": 27
         },
         "catan.trade.domestic": {
             "name": "catan.trade.domestic",
@@ -682,7 +682,7 @@
             "module": "catan.trade",
             "namespace": "",
             "file": "student/gameplay/js/trading/DomesticView.js",
-            "line": 25,
+            "line": 27,
             "description": "This is the namespace for domestic trading"
         },
         "catan.trade.maritime": {
@@ -700,7 +700,7 @@
             "module": "catan.trade",
             "namespace": "",
             "file": "student/gameplay/js/trading/MaritimeView.js",
-            "line": 25,
+            "line": 27,
             "description": "This is the namespace for maritime trading"
         },
         "catan.turntracker": {
@@ -716,7 +716,7 @@
             },
             "tag": "module",
             "file": "student/gameplay/js/turn_tracker/TrackerView.js",
-            "line": 19,
+            "line": 21,
             "description": "The namespace for the turn tracker"
         },
         "core": {
@@ -731,7 +731,7 @@
             },
             "tag": "module",
             "file": "student/gameplay/js/Core.js",
-            "line": 8,
+            "line": 10,
             "description": "These functions are in the default namespace and provide core functionality such as inheritance."
         }
     },
@@ -747,7 +747,7 @@
             "module": "catan.comm",
             "namespace": "comm",
             "file": "student/gameplay/js/comms_box/CommController.js",
-            "line": 14,
+            "line": 15,
             "description": "The basic controller class to extend from",
             "extends": "misc.BaseController",
             "params": [
@@ -775,7 +775,7 @@
             "module": "catan.comm",
             "namespace": "comm",
             "file": "student/gameplay/js/comms_box/CommController.js",
-            "line": 40,
+            "line": 41,
             "description": "The controller class for the Log",
             "is_constructor": 1,
             "extends": "comm.BaseCommController",
@@ -803,7 +803,7 @@
             "module": "catan.comm",
             "namespace": "comm",
             "file": "student/gameplay/js/comms_box/CommController.js",
-            "line": 61,
+            "line": 62,
             "description": "The controller class for the Chat",
             "is_constructor": 1,
             "extends": "comm.BaseCommController",
@@ -831,7 +831,7 @@
             "module": "catan.comm",
             "namespace": "comm",
             "file": "student/gameplay/js/comms_box/CommView.js",
-            "line": 17,
+            "line": 19,
             "description": "The superclass for displaying a message history.",
             "is_constructor": 1,
             "params": [
@@ -875,7 +875,7 @@
             "module": "catan.comm",
             "namespace": "comm",
             "file": "student/gameplay/js/comms_box/CommView.js",
-            "line": 101,
+            "line": 103,
             "description": "The view class for the Log",
             "is_constructor": 1,
             "extends": "comm.BaseCommView"
@@ -891,7 +891,7 @@
             "module": "catan.comm",
             "namespace": "comm",
             "file": "student/gameplay/js/comms_box/CommView.js",
-            "line": 125,
+            "line": 127,
             "description": "The view class for the Chat",
             "is_constructor": 1,
             "extends": "comm.BaseCommView"
@@ -907,7 +907,7 @@
             "module": "catan.devCards",
             "namespace": "devCards",
             "file": "student/gameplay/js/development_cards/BuyOverlay.js",
-            "line": 16,
+            "line": 18,
             "description": "A view for buying a development card.  Inherits from misc.BaseOverlay.",
             "is_constructor": 1,
             "extends": "misc.BaseOverlay"
@@ -923,7 +923,7 @@
             "module": "catan.devCards",
             "namespace": "devCards",
             "file": "student/gameplay/js/development_cards/CardController.js",
-            "line": 21,
+            "line": 22,
             "is_constructor": 1,
             "extends": "misc.BaseController",
             "params": [
@@ -965,7 +965,7 @@
             "module": "catan.devCards",
             "namespace": "devCards",
             "file": "student/gameplay/js/development_cards/CardOverlay.js",
-            "line": 25,
+            "line": 27,
             "description": "A view for viewing and using development cards.  Inherits from misc.BaseOverlay.",
             "extends": "misc.BaseOverlay",
             "is_constructor": 1
@@ -981,7 +981,7 @@
             "module": "catan.discard",
             "namespace": "discard",
             "file": "student/gameplay/js/discard/DiscardController.js",
-            "line": 17,
+            "line": 18,
             "is_constructor": 1,
             "extends": "misc.BaseController",
             "params": [
@@ -1013,7 +1013,7 @@
             "module": "catan.discard",
             "namespace": "discard",
             "file": "student/gameplay/js/discard/DiscardOverlay.js",
-            "line": 18,
+            "line": 20,
             "description": "A view for discarding cards.  Inherits from misc.BaseOverlay.",
             "is_constructor": 1,
             "extends": "misc.BaseOverlay"
@@ -1029,7 +1029,7 @@
             "module": "catan.map",
             "namespace": "map",
             "file": "student/gameplay/js/map/MapController.js",
-            "line": 29,
+            "line": 30,
             "is_constructor": 1,
             "params": [
                 {
@@ -1065,7 +1065,7 @@
             "module": "catan.map",
             "namespace": "map",
             "file": "student/gameplay/js/map/MapOverlay.js",
-            "line": 99,
+            "line": 101,
             "description": "This class implements the map pop-out overlay view that lets the user place a piece on the map.  \n\t\tIt inherits from misc.BaseOverlay.\nIt calls the \"cancelMove\" function on the controller it belongs to.",
             "is_constructor": 1
         },
@@ -1080,7 +1080,7 @@
             "module": "catan.map",
             "namespace": "map",
             "file": "student/gameplay/js/map/MapView.js",
-            "line": 167,
+            "line": 169,
             "description": "An (x,y) point",
             "is_constructor": 1,
             "params": [
@@ -1107,7 +1107,7 @@
             "module": "catan.map",
             "namespace": "map",
             "file": "student/gameplay/js/map/MapView.js",
-            "line": 193,
+            "line": 195,
             "description": "This class defines a vertex location as used by view. It uses a unique representation for each vertex",
             "is_constructor": 1,
             "params": [
@@ -1139,7 +1139,7 @@
             "module": "catan.map",
             "namespace": "map",
             "file": "student/gameplay/js/map/MapView.js",
-            "line": 227,
+            "line": 229,
             "description": "This class defines an edge location as used by view. It uses a unique representation for each edge",
             "is_constructor": 1,
             "params": [
@@ -1171,7 +1171,7 @@
             "module": "catan.map",
             "namespace": "map",
             "file": "student/gameplay/js/map/MapView.js",
-            "line": 256,
+            "line": 258,
             "description": "This class defines a port location as used by view. It uses a unique representation for each port location/orientation.",
             "is_constructor": 1,
             "params": [
@@ -1203,7 +1203,7 @@
             "module": "catan.map",
             "namespace": "map",
             "file": "student/gameplay/js/map/MapView.js",
-            "line": 860,
+            "line": 862,
             "description": "You need to pass in how many pixels tall/wide the map is \nand how many hexes tall/wide the map is \n(the hex dim can be calculated from the client model)",
             "params": [
                 {
@@ -1230,7 +1230,7 @@
             "module": "catan.map",
             "namespace": "map",
             "file": "student/gameplay/js/map/RobberOverlay.js",
-            "line": 22,
+            "line": 24,
             "description": "This class implements the overlay view that lets the user select a player to rob.  \nIt displays a list of other users who can be robbed, and lets the user select which one they want to rob.\n\t\tIt inherits from misc.BaseOverlay.\nIts controller should be set to a MapController, on which it calls the \"robPlayer\" method.",
             "is_constructor": 1,
             "extends": "misc.BaseOverlay"
@@ -1246,7 +1246,7 @@
             "module": "catan.models",
             "namespace": "models",
             "file": "student/gameplay/js/model/clientmodel.js",
-            "line": 12,
+            "line": 13,
             "description": "This the top-level client model class that contains the local player, map contents, etc.",
             "is_constructor": 1,
             "params": [
@@ -1269,7 +1269,7 @@
             "submodule": "catan.models.hexgrid",
             "namespace": "hexgrid",
             "file": "student/gameplay/js/model/hexgrid.js",
-            "line": 20,
+            "line": 22,
             "description": "This class serves as the basis for the different hexes (water, desert, resource)\nYou should extend this class - in you're constructor, pass in the proper edge and vertex classes \n(they should extend the hexgrid.BaseContainer class)",
             "is_constructor": 1,
             "params": [
@@ -1302,7 +1302,7 @@
             "submodule": "catan.models.hexgrid",
             "namespace": "hexgrid",
             "file": "student/gameplay/js/model/hexgrid.js",
-            "line": 108,
+            "line": 110,
             "description": "Use this class to look up the numerical value of a EdgeDirection from JSON.\n\tThese are the edge values in clockwise order starting at NW.\n\tThey are in order so that modulo math makes this easy\n\tEdge and Vertex Directions give you the edge and then the vertex in clockwise order\nIt's really just an enumeration. For example EdgeDirection[\"NW\"] or EdgeDirection.NW returns 0;\nThe possible edge directions are \"NW\",\"N\",\"NE\",\"SE\",\"S\",\"SW\""
         },
         "hexgrid.HexDirection": {
@@ -1317,7 +1317,7 @@
             "submodule": "catan.models.hexgrid",
             "namespace": "hexgrid",
             "file": "student/gameplay/js/model/hexgrid.js",
-            "line": 121,
+            "line": 123,
             "description": "These are simply a copy of EdgeDirections. They can be fed to a hexgrid.HexLocation to get \nthe location of the hex next to it in that direction. It's really just an enumeration."
         },
         "hexgrid.VertexDirection": {
@@ -1332,7 +1332,7 @@
             "submodule": "catan.models.hexgrid",
             "namespace": "hexgrid",
             "file": "student/gameplay/js/model/hexgrid.js",
-            "line": 127,
+            "line": 129,
             "description": "Use this class to look up the numerical value of a VertexDirection from JSON.\n\tThese are the vertex values in clockwise order starting at NW.\n\tThey are in order so that modulo math makes this easy\n\tEdge and Vertex Directions give you the edge and then the vertex in clockwise order.\nIt's really just an enumeration. For example VertexDirection[\"NW\"] or VertexDirection.NW returns 1;\nThe possible VertexDirection are \"W\",\"NW\",\"NE\",\"E\",\"SE\",\"SW\""
         },
         "hexgrid.HexGrid": {
@@ -1347,7 +1347,7 @@
             "submodule": "catan.models.hexgrid",
             "namespace": "hexgrid",
             "file": "student/gameplay/js/model/hexgrid.js",
-            "line": 140,
+            "line": 142,
             "description": "This class will never be directly used by anything other than the map.\nIt's purpose is to present an array-like interface for hex storage, \nas well as reducing wasted space that naturally incurs. It also provides\na clean interface for generating the initial tiles.\n\nThis takes the length of 3 connected sides and returns a hexagonal\ngrid object. Of necessity, two of the three dimensions must be \nthe same - this generates a hexagon that is symmetrical along two axis.\nThis is perhaps overkill, but the implementation provides insight into \nhow hexagonal grids work.\n\nYou'll want to use the static method 'getRegular' which takes radius and the prototype of your hex",
             "is_constructor": 1,
             "params": [
@@ -1395,7 +1395,7 @@
             "submodule": "catan.models.hexgrid",
             "namespace": "hexgrid",
             "file": "student/gameplay/js/model/hexgrid.js",
-            "line": 349,
+            "line": 351,
             "description": "This represents a location of a hex on a hex grid.",
             "is_constructor": 1,
             "params": [
@@ -1423,7 +1423,7 @@
             "submodule": "catan.models.hexgrid",
             "namespace": "hexgrid",
             "file": "student/gameplay/js/model/hexgrid.js",
-            "line": 418,
+            "line": 420,
             "description": "This is the base class for VertexLocation and EdgeLocation\n        * \n        * -- This is NOT instantiable by itself --\n        *",
             "is_constructor": 1
         },
@@ -1439,7 +1439,7 @@
             "submodule": "catan.models.hexgrid",
             "namespace": "hexgrid",
             "file": "student/gameplay/js/model/hexgrid.js",
-            "line": 518,
+            "line": 520,
             "description": "This class represent an edge location. It consists of a hex location\nand an edge direction\n    This takes a hex location and a direction. Alternatively you can use\n     (x,y,direction)",
             "is_constructor": 1,
             "params": [
@@ -1468,7 +1468,7 @@
             "submodule": "catan.models.hexgrid",
             "namespace": "hexgrid",
             "file": "student/gameplay/js/model/hexgrid.js",
-            "line": 595,
+            "line": 597,
             "description": "This class represents a vertex location. It consists of a hex location\nand a vertex direction. Instead of (hexLocation, direction) you can use\n    (x, y, direction).",
             "is_constructor": 1,
             "params": [
@@ -1496,7 +1496,7 @@
             "submodule": "catan.models.hexgrid",
             "namespace": "hexgrid",
             "file": "student/gameplay/js/model/hexgrid.js",
-            "line": 677,
+            "line": 679,
             "description": "This class represents a base container (to be used for Edge or Vertex). You'll need to pass a child-class (the constructor/\n    class, not an instance) to the BasicHex constructor so that it knows how to store stuff. This is the default implementation\n    which provides the the abstract the minimum functions. Extends this class to make an Edge/Vertex container class.",
             "is_constructor": 1
         },
@@ -1511,7 +1511,7 @@
             "module": "catan.models",
             "namespace": "models",
             "file": "student/gameplay/js/model/hexgrid_impl.js",
-            "line": 25,
+            "line": 26,
             "description": "This class represents an edge. It inherits from BaseContainer.\n    The data in this class (that you get from the JSON model) is independent of the hexgrid, except for the location.\n    Therefore, we leave it up to you to decide how to implement it.\n    It must however implement one function that the hexgrid looks for: 'isOccupied' - look at its documentation.\n    From the JSON, this object will have two properties: location, and ownerID.\n    Besides the 'isOccupied' method, you may add any other methods that you need.",
             "is_constructor": 1,
             "extends": "hexgrid.BaseContainer"
@@ -1527,7 +1527,7 @@
             "module": "catan.models",
             "namespace": "models",
             "file": "student/gameplay/js/model/hexgrid_impl.js",
-            "line": 80,
+            "line": 81,
             "description": "This class represents a Hex. You may add any methods that you need (e.g., to get the resource/hex type, etc.)\n    \n    In order to work with the hexgrid, this class must extend hexgrid.BasicHex (already done in the code). You also need to implement\n    a CatanVertex and CatanEdge classes (stubs are provided in this file).  Look at their documentation to see what needs to be done there.\n     \n    The hexgrid will be passed an instance of this class to use as a model, and will pull the constructor from that instance. \n    (The core.forceInherit sets the constructor, in case you are curious how that works)",
             "is_constructor": 1,
             "params": [
@@ -1550,7 +1550,7 @@
             "module": "catan.misc",
             "namespace": "misc",
             "file": "student/gameplay/js/points/GameOverOverlay.js",
-            "line": 22,
+            "line": 24,
             "description": "A view to display the results of the game; inherits from misc.BaseOverlay",
             "is_constructor": 1,
             "extends": "misc.BaseOverlay"
@@ -1566,7 +1566,7 @@
             "module": "catan.points",
             "namespace": "points",
             "file": "student/gameplay/js/points/PointsController.js",
-            "line": 19,
+            "line": 20,
             "is_constructor": 1,
             "extends": "misc.BaseController",
             "params": [
@@ -1598,7 +1598,7 @@
             "module": "catan.points",
             "namespace": "points",
             "file": "student/gameplay/js/points/PointsView.js",
-            "line": 18,
+            "line": 20,
             "description": "This class provides a victory point tracker view",
             "is_constructor": 1
         },
@@ -1613,7 +1613,7 @@
             "module": "catan.resources",
             "namespace": "resources",
             "file": "student/gameplay/js/resources/ResourcesController.js",
-            "line": 27,
+            "line": 28,
             "description": "Controller class for the Resources View.",
             "is_constructor": 1,
             "extends": "misc.BaseController",
@@ -1646,7 +1646,7 @@
             "module": "catan.resources",
             "namespace": "resources",
             "file": "student/gameplay/js/resources/ResourcesView.js",
-            "line": 24,
+            "line": 26,
             "description": "View to display client player's current resources: \n\tResources (wood, sheep, ore, brick, wheat) and \n\tBuyable Options (houses, roads, cities). \nIt also includes:\n\tOption to buy a Development card\n Option to play a Development card\n\tThe number of armies the player has used\nIt calls the following controller methods: \"buildRoad\", \"buildSettlement\", \"buildCity\", \"buyCard\", \"playCard\"",
             "is_constructor": 1
         },
@@ -1661,7 +1661,7 @@
             "module": "catan.roll",
             "namespace": "roll",
             "file": "student/gameplay/js/roll/RollController.js",
-            "line": 14,
+            "line": 15,
             "is_constructor": 1,
             "extends": "misc.BaseController",
             "params": [
@@ -1693,7 +1693,7 @@
             "module": "catan.roll",
             "namespace": "roll",
             "file": "student/gameplay/js/roll/RollOverlay.js",
-            "line": 24,
+            "line": 26,
             "description": "A view for rolling the dice.  It inherits from misc.BaseOverlay.\nIt calls the \"rollDice\" method on its controller if the user clicks the \"Roll\" button.",
             "is_constructor": 1,
             "extends": "misc.BaseOverlay"
@@ -1709,7 +1709,7 @@
             "module": "catan.roll",
             "namespace": "roll",
             "file": "student/gameplay/js/roll/RollResultOverlay.js",
-            "line": 22,
+            "line": 24,
             "description": "A view for displaying the result of a roll.  It inherits from misc.BaseOverlay.\nIt calls the \"closeResult\" method on its controller when the user clicks the \"Okay\" button.",
             "is_constructor": 1,
             "extends": "misc.BaseOverlay"
@@ -1725,7 +1725,7 @@
             "module": "catan.setup",
             "namespace": "setup",
             "file": "student/gameplay/js/setup/SetupRoundController.js",
-            "line": 14,
+            "line": 15,
             "is_constructor": 1,
             "extends": "misc.BaseController",
             "params": [
@@ -1753,7 +1753,7 @@
             "submodule": "catan.trade.domestic",
             "namespace": "domestic",
             "file": "student/gameplay/js/trading/AcceptOverlay.js",
-            "line": 20,
+            "line": 22,
             "description": "A view for accepting a trade from a player.  It inherits from misc.BaseOverlay.",
             "is_constructor": 1,
             "extends": "misc.BaseOverlay"
@@ -1770,7 +1770,7 @@
             "submodule": "catan.trade.domestic",
             "namespace": "domestic",
             "file": "student/gameplay/js/trading/DomesticController.js",
-            "line": 20,
+            "line": 21,
             "is_constructor": 1,
             "extends": "misc.BaseController",
             "params": [
@@ -1808,7 +1808,7 @@
             "submodule": "catan.trade.domestic",
             "namespace": "domestic",
             "file": "student/gameplay/js/trading/DomesticView.js",
-            "line": 25,
+            "line": 27,
             "description": "A view for setting up trades between players.",
             "is_constructor": 1
         },
@@ -1824,7 +1824,7 @@
             "submodule": "catan.trade.maritime",
             "namespace": "maritime",
             "file": "student/gameplay/js/trading/MaritimeController.js",
-            "line": 21,
+            "line": 22,
             "is_constructor": 1,
             "extends": "misc.BaseController",
             "params": [
@@ -1852,7 +1852,7 @@
             "submodule": "catan.trade.maritime",
             "namespace": "maritime",
             "file": "student/gameplay/js/trading/MaritimeView.js",
-            "line": 25,
+            "line": 27,
             "description": "A view for setting up trades between the client player and the bank.",
             "is_constructor": 1
         },
@@ -1867,7 +1867,7 @@
             "module": "catan.turntracker",
             "namespace": "turntracker",
             "file": "student/gameplay/js/turn_tracker/TrackerController.js",
-            "line": 15,
+            "line": 16,
             "description": "The controller class for the Turn Tracker",
             "extends": "misc.BaseController",
             "params": [
@@ -1895,7 +1895,7 @@
             "module": "catan.turntracker",
             "namespace": "turntracker",
             "file": "student/gameplay/js/turn_tracker/TrackerView.js",
-            "line": 19,
+            "line": 21,
             "description": "A view that is used for displaying the current state of the game:\n1) a table that displays each player's basic information and highlights the current turn,\n2) a button to display the game state",
             "is_constructor": 1
         },
@@ -1910,7 +1910,7 @@
             "module": "catan.misc",
             "namespace": "misc",
             "file": "student/gameplay/js/view_basics/BasicController.js",
-            "line": 12,
+            "line": 13,
             "description": "This class serves as the basis for all controller classes.\t\t\nThis constructor should be called by all child classes.",
             "is_constructor": 1,
             "params": [
@@ -1936,7 +1936,7 @@
             "module": "catan.misc",
             "namespace": "misc",
             "file": "student/gameplay/js/view_basics/BasicOverlay.js",
-            "line": 12,
+            "line": 14,
             "description": "This class is the base class for all overlay view classes.",
             "is_constructor": 1
         },
@@ -1951,7 +1951,7 @@
             "module": "catan.misc",
             "namespace": "misc",
             "file": "student/gameplay/js/view_basics/WaitOverlay.js",
-            "line": 15,
+            "line": 17,
             "description": "This class implements a placeholder overlay to enforce a wait period.\nIt inherits from misc.BaseOverlay.\nIt does not call any controller methods.",
             "extends": "misc.BaseOverlay",
             "is_constructor": 1
@@ -1967,7 +1967,7 @@
             "module": "core",
             "namespace": "core",
             "file": "student/gameplay/js/Core.js",
-            "line": 8,
+            "line": 10,
             "description": "This really isn't a class. These are actually standalone functions.",
             "static": 1
         }
@@ -1975,7 +1975,7 @@
     "classitems": [
         {
             "file": "student/gameplay/js/comms_box/CommController.js",
-            "line": 73,
+            "line": 74,
             "description": "Called by the view whenever input is submitted",
             "itemtype": "method",
             "name": "addLine",
@@ -1992,7 +1992,7 @@
         },
         {
             "file": "student/gameplay/js/comms_box/CommView.js",
-            "line": 64,
+            "line": 66,
             "description": "Sets new content for the display",
             "itemtype": "method",
             "name": "resetLines",
@@ -2009,7 +2009,7 @@
         },
         {
             "file": "student/gameplay/js/comms_box/CommView.js",
-            "line": 81,
+            "line": 83,
             "description": "Sets the controller and action for the input element",
             "itemtype": "method",
             "name": "setController",
@@ -2026,7 +2026,7 @@
         },
         {
             "file": "student/gameplay/js/development_cards/CardController.js",
-            "line": 36,
+            "line": 37,
             "description": "Called when the player buys a development card",
             "itemtype": "method",
             "name": "buyCard",
@@ -2039,7 +2039,7 @@
         },
         {
             "file": "student/gameplay/js/development_cards/CardController.js",
-            "line": 44,
+            "line": 45,
             "description": "Called when the player plays a year of plenty card",
             "itemtype": "method",
             "name": "useYearOfPlenty",
@@ -2064,7 +2064,7 @@
         },
         {
             "file": "student/gameplay/js/development_cards/CardController.js",
-            "line": 54,
+            "line": 55,
             "description": "Called when the player plays a monopoly card",
             "itemtype": "method",
             "name": "useMonopoly",
@@ -2084,7 +2084,7 @@
         },
         {
             "file": "student/gameplay/js/development_cards/CardController.js",
-            "line": 63,
+            "line": 64,
             "description": "Called when the player plays a monument card",
             "itemtype": "method",
             "name": "useMonument",
@@ -2097,7 +2097,7 @@
         },
         {
             "file": "student/gameplay/js/development_cards/CardController.js",
-            "line": 71,
+            "line": 72,
             "description": "Called when the player plays a soldier card",
             "itemtype": "method",
             "name": "useSoldier",
@@ -2110,7 +2110,7 @@
         },
         {
             "file": "student/gameplay/js/development_cards/CardController.js",
-            "line": 79,
+            "line": 80,
             "description": "Called when the player plays the road building card",
             "itemtype": "method",
             "name": "useRoadBuild",
@@ -2123,7 +2123,7 @@
         },
         {
             "file": "student/gameplay/js/development_cards/CardOverlay.js",
-            "line": 46,
+            "line": 48,
             "description": "Attaches the controller to the view and builds the view on the page.",
             "itemtype": "method",
             "name": "setController",
@@ -2143,7 +2143,7 @@
         },
         {
             "file": "student/gameplay/js/development_cards/CardOverlay.js",
-            "line": 59,
+            "line": 61,
             "description": "Enables a single card",
             "itemtype": "method",
             "name": "setCardEnabled",
@@ -2168,7 +2168,7 @@
         },
         {
             "file": "student/gameplay/js/development_cards/CardOverlay.js",
-            "line": 73,
+            "line": 75,
             "description": "Sets the amount for a single card",
             "itemtype": "method",
             "name": "updateAmount",
@@ -2193,7 +2193,7 @@
         },
         {
             "file": "student/gameplay/js/development_cards/CardOverlay.js",
-            "line": 84,
+            "line": 86,
             "description": "Resets the overlay view",
             "itemtype": "method",
             "name": "clearView",
@@ -2206,7 +2206,7 @@
         },
         {
             "file": "student/gameplay/js/discard/DiscardController.js",
-            "line": 41,
+            "line": 42,
             "description": "Called by the view when the player clicks the discard button.\n         It should send the discard command and allow the game to continue.",
             "itemtype": "method",
             "name": "discard",
@@ -2219,7 +2219,7 @@
         },
         {
             "file": "student/gameplay/js/discard/DiscardController.js",
-            "line": 50,
+            "line": 51,
             "description": "Called by the view when the player increases the amount to discard for a single resource.",
             "itemtype": "method",
             "name": "increaseAmount",
@@ -2239,7 +2239,7 @@
         },
         {
             "file": "student/gameplay/js/discard/DiscardController.js",
-            "line": 59,
+            "line": 60,
             "description": "Called by the view when the player decreases the amount to discard for a single resource.",
             "itemtype": "method",
             "name": "decreaseAmount",
@@ -2259,7 +2259,7 @@
         },
         {
             "file": "student/gameplay/js/discard/DiscardOverlay.js",
-            "line": 38,
+            "line": 40,
             "description": "Attaches the controller to the view and builds the view on the page.",
             "itemtype": "method",
             "name": "setController",
@@ -2279,7 +2279,7 @@
         },
         {
             "file": "student/gameplay/js/discard/DiscardOverlay.js",
-            "line": 51,
+            "line": 53,
             "description": "Sets the maximum amount of a resource that the player can discard",
             "itemtype": "method",
             "name": "setResourceMaxAmount",
@@ -2304,7 +2304,7 @@
         },
         {
             "file": "student/gameplay/js/discard/DiscardOverlay.js",
-            "line": 62,
+            "line": 64,
             "description": "Enables/disables increasing or decreasing for a single resource.",
             "itemtype": "method",
             "name": "setResourceAmountChangeEnabled",
@@ -2334,7 +2334,7 @@
         },
         {
             "file": "student/gameplay/js/discard/DiscardOverlay.js",
-            "line": 79,
+            "line": 81,
             "description": "Sets the amount displayed for a single resource.",
             "itemtype": "method",
             "name": "setResourceAmount",
@@ -2359,7 +2359,7 @@
         },
         {
             "file": "student/gameplay/js/discard/DiscardOverlay.js",
-            "line": 92,
+            "line": 94,
             "description": "Enables or disabled the discard button.",
             "itemtype": "method",
             "name": "setDiscardButtonEnabled",
@@ -2379,7 +2379,7 @@
         },
         {
             "file": "student/gameplay/js/discard/DiscardOverlay.js",
-            "line": 105,
+            "line": 107,
             "description": "Sets the state message, which indicates how many cards a player has set to discard, and how many remain to set.",
             "itemtype": "method",
             "name": "setStateMessage",
@@ -2399,7 +2399,7 @@
         },
         {
             "file": "student/gameplay/js/map/MapController.js",
-            "line": 43,
+            "line": 44,
             "description": "This method is called by the Rob View when a player to rob is selected via a button click.",
             "params": [
                 {
@@ -2416,7 +2416,7 @@
         },
         {
             "file": "student/gameplay/js/map/MapController.js",
-            "line": 51,
+            "line": 52,
             "description": "Starts the robber movement on the map. The map should pop out and the player should be able\nmove the robber.  This is called when the user plays a \"solider\" development card.",
             "itemtype": "method",
             "name": "doSoldierAction",
@@ -2429,7 +2429,7 @@
         },
         {
             "file": "student/gameplay/js/map/MapController.js",
-            "line": 60,
+            "line": 61,
             "description": "Pops the map out and prompts the player to place two roads.\nThis is called when the user plays a \"road building\" progress development card.",
             "itemtype": "method",
             "name": "startDoubleRoadBuilding",
@@ -2442,7 +2442,7 @@
         },
         {
             "file": "student/gameplay/js/map/MapController.js",
-            "line": 70,
+            "line": 71,
             "description": "Pops the map out and prompts the player to place the appropriate piece",
             "params": [
                 {
@@ -2472,7 +2472,7 @@
         },
         {
             "file": "student/gameplay/js/map/MapController.js",
-            "line": 81,
+            "line": 82,
             "description": "This method is called from the modal view when the cancel button is pressed. \nIt should allow the user to continue gameplay without having to place a piece.",
             "itemtype": "method",
             "name": "cancelMove",
@@ -2485,7 +2485,7 @@
         },
         {
             "file": "student/gameplay/js/map/MapController.js",
-            "line": 90,
+            "line": 91,
             "description": "This method is called whenever the user is trying to place a piece on the map. \n         It is called by the view for each \"mouse move\" event.  \n         The returned value tells the view whether or not to allow the piece to be \"dropped\" at the current location.",
             "params": [
                 {
@@ -2511,7 +2511,7 @@
         },
         {
             "file": "student/gameplay/js/map/MapController.js",
-            "line": 103,
+            "line": 104,
             "description": "This method is called when the user clicks the mouse to place a piece.\n         This method should close the modal and possibly trigger the Rob View.",
             "params": [
                 {
@@ -2533,7 +2533,7 @@
         },
         {
             "file": "student/gameplay/js/map/MapOverlay.js",
-            "line": 114,
+            "line": 116,
             "description": "Shows a modal overlay of the map.",
             "itemtype": "method",
             "name": "showModal",
@@ -2550,7 +2550,7 @@
         },
         {
             "file": "student/gameplay/js/map/MapOverlay.js",
-            "line": 153,
+            "line": 155,
             "description": "Closes the overlay.",
             "itemtype": "method",
             "name": "closeModal",
@@ -2560,7 +2560,7 @@
         },
         {
             "file": "student/gameplay/js/map/MapView.js",
-            "line": 178,
+            "line": 180,
             "itemtype": "property",
             "name": "x",
             "type": "integer",
@@ -2570,7 +2570,7 @@
         },
         {
             "file": "student/gameplay/js/map/MapView.js",
-            "line": 183,
+            "line": 185,
             "itemtype": "property",
             "name": "y",
             "type": "integer",
@@ -2580,7 +2580,7 @@
         },
         {
             "file": "student/gameplay/js/map/MapView.js",
-            "line": 209,
+            "line": 211,
             "description": "The location of the vertex on the hex (allowed values:\"E\" , \"W\")",
             "itemtype": "property",
             "name": "dir",
@@ -2591,7 +2591,7 @@
         },
         {
             "file": "student/gameplay/js/map/MapView.js",
-            "line": 243,
+            "line": 245,
             "description": "The location of the edge on the hex (allowed values:\"SW\", \"S\", \"SE\")",
             "itemtype": "property",
             "name": "dir",
@@ -2602,7 +2602,7 @@
         },
         {
             "file": "student/gameplay/js/map/MapView.js",
-            "line": 272,
+            "line": 274,
             "description": "The amount of rotation on the port - specifically, which side it faces:\n 0 - NW\n 1 - N\n 2 - NE\n 3 - SE\n 4 - S\n 5 - SW",
             "itemtype": "property",
             "name": "rotation",
@@ -2613,7 +2613,7 @@
         },
         {
             "file": "student/gameplay/js/map/MapView.js",
-            "line": 900,
+            "line": 902,
             "itemtype": "property",
             "name": "controller",
             "type": "MapController",
@@ -2623,7 +2623,7 @@
         },
         {
             "file": "student/gameplay/js/map/MapView.js",
-            "line": 1005,
+            "line": 1007,
             "description": "This starts the piece placement process - it has no knowledge of the model, so you must tell it the piece type and color.\nColor can be omitted and has no effect if it's the robber\nAfter calling this, the view will use the controller's \"onDrag\" and \"onDrop\" methods to check whether a piece can be placed.",
             "params": [
                 {
@@ -2645,7 +2645,7 @@
         },
         {
             "file": "student/gameplay/js/map/MapView.js",
-            "line": 1068,
+            "line": 1070,
             "description": "This cancels the piece placement process.",
             "itemtype": "method",
             "name": "cancelDrop",
@@ -2655,7 +2655,7 @@
         },
         {
             "file": "student/gameplay/js/map/MapView.js",
-            "line": 1077,
+            "line": 1079,
             "description": "This causes the pieces on the board to be drawn.",
             "itemtype": "method",
             "name": "drawPieces",
@@ -2665,7 +2665,7 @@
         },
         {
             "file": "student/gameplay/js/map/MapView.js",
-            "line": 1086,
+            "line": 1088,
             "description": "This adds a hex to the board.",
             "params": [
                 {
@@ -2693,7 +2693,7 @@
         },
         {
             "file": "student/gameplay/js/map/MapView.js",
-            "line": 1098,
+            "line": 1100,
             "description": "This adds a number to the board.",
             "params": [
                 {
@@ -2721,7 +2721,7 @@
         },
         {
             "file": "student/gameplay/js/map/MapView.js",
-            "line": 1110,
+            "line": 1112,
             "description": "This adds a port to the board.",
             "params": [
                 {
@@ -2749,7 +2749,7 @@
         },
         {
             "file": "student/gameplay/js/map/MapView.js",
-            "line": 1122,
+            "line": 1124,
             "description": "This places the robber on the board. Subsequent calls move the robber.",
             "params": [
                 {
@@ -2772,7 +2772,7 @@
         },
         {
             "file": "student/gameplay/js/map/MapView.js",
-            "line": 1135,
+            "line": 1137,
             "description": "This adds a settlement to the board.",
             "params": [
                 {
@@ -2800,7 +2800,7 @@
         },
         {
             "file": "student/gameplay/js/map/MapView.js",
-            "line": 1151,
+            "line": 1153,
             "description": "This adds a city to the board.",
             "params": [
                 {
@@ -2828,7 +2828,7 @@
         },
         {
             "file": "student/gameplay/js/map/MapView.js",
-            "line": 1166,
+            "line": 1168,
             "description": "This adds a road to the board.",
             "params": [
                 {
@@ -2856,7 +2856,7 @@
         },
         {
             "file": "student/gameplay/js/map/RobberOverlay.js",
-            "line": 57,
+            "line": 59,
             "description": "This sets the available players to rob: an array of objects of the form \n* { color:String,\n* \tname:String,\n* \tplayerNum:int,\n* \tcards:int}",
             "itemtype": "method",
             "name": "setPlayerInfo",
@@ -2873,7 +2873,7 @@
         },
         {
             "file": "student/gameplay/js/model/clientmodel.js",
-            "line": 24,
+            "line": 25,
             "description": "This is called to fetch the game state from the server the very first time.\nIt should: 1) fetch the game state JSON from the server, 2) update the client model with the\nreturned data, 3) notify all client model listeners that the model has changed, and 4) invoke\nthe success callback function with the object received from the server.",
             "itemtype": "method",
             "name": "initFromServer",
@@ -2890,7 +2890,7 @@
         },
         {
             "file": "student/gameplay/js/model/hexgrid.js",
-            "line": 44,
+            "line": 46,
             "description": "Using this method sets the location on the hex and the right functions on all the edges and vertexes it has\nI don't think you'll have to use this...",
             "itemtype": "method",
             "name": "setLocation",
@@ -2908,7 +2908,7 @@
         },
         {
             "file": "student/gameplay/js/model/hexgrid.js",
-            "line": 63,
+            "line": 65,
             "description": "Use this to access the edge. You should never have to set new edge objects post initialization. So not setter.",
             "itemtype": "method",
             "name": "getEdge",
@@ -2930,7 +2930,7 @@
         },
         {
             "file": "student/gameplay/js/model/hexgrid.js",
-            "line": 74,
+            "line": 76,
             "description": "Use this to access the edge. You should never have to set new edge objects post initialization. So not setter.",
             "itemtype": "method",
             "name": "getVertex",
@@ -2952,7 +2952,7 @@
         },
         {
             "file": "student/gameplay/js/model/hexgrid.js",
-            "line": 199,
+            "line": 201,
             "description": "This calls the HexGrid conructor with the right arguements given a radius to \n create a regular hexgrid, with the reference 0,0 pointing to the middle",
             "itemtype": "method",
             "name": "getRegular",
@@ -2980,7 +2980,7 @@
         },
         {
             "file": "student/gameplay/js/model/hexgrid.js",
-            "line": 217,
+            "line": 219,
             "description": "Returns an array of all the hexes. It's useful in order to iterate over them (using [].map)",
             "itemtype": "method",
             "name": "getHexes",
@@ -2994,7 +2994,7 @@
         },
         {
             "file": "student/gameplay/js/model/hexgrid.js",
-            "line": 244,
+            "line": 246,
             "description": "Returns the hex at the give spot. If you used the 'getRegular' function to make this hexgrid,\n the hexLocation (0,0) will return the hex in the middle of the hexgrid.",
             "itemtype": "method",
             "name": "getHex",
@@ -3016,7 +3016,7 @@
         },
         {
             "file": "student/gameplay/js/model/hexgrid.js",
-            "line": 283,
+            "line": 285,
             "description": "Returns true if there is a hex at the given location",
             "itemtype": "method",
             "name": "hasHex",
@@ -3038,7 +3038,7 @@
         },
         {
             "file": "student/gameplay/js/model/hexgrid.js",
-            "line": 293,
+            "line": 295,
             "description": "Returns a list of hex locations that point to all the hexs \ncurrently stored in the grid",
             "itemtype": "method",
             "name": "getAllLocations",
@@ -3053,7 +3053,7 @@
         },
         {
             "file": "student/gameplay/js/model/hexgrid.js",
-            "line": 323,
+            "line": 325,
             "description": "This method depends on the class derived from BaseContainer for a Edge implementing the method 'isOccupied'\nreturning true iff the container has a road",
             "itemtype": "method",
             "name": "getEdges",
@@ -3068,7 +3068,7 @@
         },
         {
             "file": "student/gameplay/js/model/hexgrid.js",
-            "line": 334,
+            "line": 336,
             "description": "This method depends on the class derived from BaseContainer for a Vertex implementing the method 'isOccupied'\nreturning true iff the container has a city/settlement.\nNote, you'll still have to a method on the edge/vertex itself to get the city or settlement from it.",
             "itemtype": "method",
             "name": "getVertexes",
@@ -3083,7 +3083,7 @@
         },
         {
             "file": "student/gameplay/js/model/hexgrid.js",
-            "line": 368,
+            "line": 370,
             "description": "This represents a location of a hex on a hex grid.",
             "itemtype": "method",
             "name": "equals",
@@ -3104,7 +3104,7 @@
         },
         {
             "file": "student/gameplay/js/model/hexgrid.js",
-            "line": 379,
+            "line": 381,
             "description": "This represents a location of a hex on a hex grid.",
             "itemtype": "method",
             "name": "getNeighborLocation",
@@ -3125,7 +3125,7 @@
         },
         {
             "file": "student/gameplay/js/model/hexgrid.js",
-            "line": 452,
+            "line": 454,
             "description": "Get the next logical location by traveling about the center ofthe hex in a clockwise direction",
             "itemtype": "method",
             "name": "rotateAboutHexCW",
@@ -3140,7 +3140,7 @@
         },
         {
             "file": "student/gameplay/js/model/hexgrid.js",
-            "line": 463,
+            "line": 465,
             "description": "Get the next logical location by traveling about the center of the hex in a counter-clockwise direction",
             "itemtype": "method",
             "name": "rotateAboutHexCCW",
@@ -3155,7 +3155,7 @@
         },
         {
             "file": "student/gameplay/js/model/hexgrid.js",
-            "line": 475,
+            "line": 477,
             "description": "Edge and VertexLocation's have class-specific implementations\n\nThis function should return all Locations that refer to this spot on the map",
             "itemtype": "method",
             "name": "getEquivalenceGroup",
@@ -3170,7 +3170,7 @@
         },
         {
             "file": "student/gameplay/js/model/hexgrid.js",
-            "line": 485,
+            "line": 487,
             "description": "Abstract function to be overridden in child-class",
             "itemtype": "method",
             "name": "getNeighborVertexes",
@@ -3185,7 +3185,7 @@
         },
         {
             "file": "student/gameplay/js/model/hexgrid.js",
-            "line": 493,
+            "line": 495,
             "description": "Abstract function to be overridden in child-class",
             "itemtype": "method",
             "name": "getConnectedEdges",
@@ -3200,7 +3200,7 @@
         },
         {
             "file": "student/gameplay/js/model/hexgrid.js",
-            "line": 506,
+            "line": 508,
             "description": "Returns a unique string id for this location\n        All locations in any equivalence group will have the same id string.",
             "itemtype": "method",
             "name": "getIDString",
@@ -3215,7 +3215,7 @@
         },
         {
             "file": "student/gameplay/js/model/hexgrid.js",
-            "line": 542,
+            "line": 544,
             "description": "This function returns this Edge location as well as the edge location for\nthe other hex that this edge touches.",
             "itemtype": "method",
             "name": "getEquivalenceGroup",
@@ -3230,7 +3230,7 @@
         },
         {
             "file": "student/gameplay/js/model/hexgrid.js",
-            "line": 620,
+            "line": 622,
             "description": "This function returns this VertexLocation as well as the VertexLocation for\nthe other 2 hexes that this VertexLocation touches.",
             "itemtype": "method",
             "name": "getEquivalenceGroup",
@@ -3245,7 +3245,7 @@
         },
         {
             "file": "student/gameplay/js/model/hexgrid.js",
-            "line": 657,
+            "line": 659,
             "description": "Returns the three edge locations connected to this vertex location",
             "itemtype": "method",
             "name": "getConnectedEdges",
@@ -3260,7 +3260,7 @@
         },
         {
             "file": "student/gameplay/js/model/hexgrid.js",
-            "line": 665,
+            "line": 667,
             "description": "An alias for '.getConnectedEdges' - you could use it in tree traversal?",
             "itemtype": "method",
             "name": "getConnectedEdges",
@@ -3275,7 +3275,7 @@
         },
         {
             "file": "student/gameplay/js/model/hexgrid.js",
-            "line": 687,
+            "line": 689,
             "description": "This function should return true if this edge or vertex is occupied. (ie it contains a city, settlement or edge)",
             "itemtype": "method",
             "name": "isOccupied",
@@ -3290,7 +3290,7 @@
         },
         {
             "file": "student/gameplay/js/points/GameOverOverlay.js",
-            "line": 32,
+            "line": 34,
             "itemtype": "method",
             "name": "setWinner",
             "params": [
@@ -3311,7 +3311,7 @@
         },
         {
             "file": "student/gameplay/js/points/PointsView.js",
-            "line": 47,
+            "line": 49,
             "description": "Sets the number of points the player has",
             "itemtype": "method",
             "name": "setPoints",
@@ -3328,7 +3328,7 @@
         },
         {
             "file": "student/gameplay/js/resources/ResourcesController.js",
-            "line": 47,
+            "line": 48,
             "description": "The action to take on clicking the resource bar road button. Brings up the map \noverlay and allows you to place a road.",
             "itemtype": "method",
             "name": "buildRoad",
@@ -3341,7 +3341,7 @@
         },
         {
             "file": "student/gameplay/js/resources/ResourcesController.js",
-            "line": 62,
+            "line": 63,
             "description": "The action to take on clicking the resource bar settlement button. Brings up the map \noverlay and allows you to place a settlement.",
             "itemtype": "method",
             "name": "buildSettlement",
@@ -3354,7 +3354,7 @@
         },
         {
             "file": "student/gameplay/js/resources/ResourcesController.js",
-            "line": 77,
+            "line": 78,
             "description": "The action to take on clicking the resource bar city button. Brings up the map \noverlay and allows you to place a city.",
             "itemtype": "method",
             "name": "buildCity",
@@ -3367,7 +3367,7 @@
         },
         {
             "file": "student/gameplay/js/resources/ResourcesController.js",
-            "line": 92,
+            "line": 93,
             "description": "The action to take on clicking the resource bar \"buy a card\" button. \nShould bring up the \"buy a card\" overlay.",
             "itemtype": "method",
             "name": "buyCard",
@@ -3380,7 +3380,7 @@
         },
         {
             "file": "student/gameplay/js/resources/ResourcesController.js",
-            "line": 107,
+            "line": 108,
             "description": "The action to take on clicking the resource bar \"play a card\" button. \nShould bring up the \"play a card\" overlay.",
             "itemtype": "method",
             "name": "playCard",
@@ -3393,7 +3393,7 @@
         },
         {
             "file": "student/gameplay/js/resources/ResourcesView.js",
-            "line": 45,
+            "line": 47,
             "description": "Attaches the controller to the view and builds the view on the page.",
             "itemtype": "method",
             "name": "setController",
@@ -3413,7 +3413,7 @@
         },
         {
             "file": "student/gameplay/js/resources/ResourcesView.js",
-            "line": 56,
+            "line": 58,
             "description": "Updates the display for an element of the resource bar",
             "itemtype": "method",
             "name": "updateAmount",
@@ -3438,7 +3438,7 @@
         },
         {
             "file": "student/gameplay/js/resources/ResourcesView.js",
-            "line": 69,
+            "line": 71,
             "description": "Enables or disables an element of the resource bar",
             "itemtype": "method",
             "name": "setActionEnabled",
@@ -3463,7 +3463,7 @@
         },
         {
             "file": "student/gameplay/js/roll/RollController.js",
-            "line": 36,
+            "line": 37,
             "description": "This is called from the roll result view.  It should close the roll result view and allow the game to continue.",
             "itemtype": "method",
             "name": "closeResult",
@@ -3476,7 +3476,7 @@
         },
         {
             "file": "student/gameplay/js/roll/RollController.js",
-            "line": 44,
+            "line": 45,
             "description": "This method generates a dice roll",
             "itemtype": "method",
             "name": "rollDice",
@@ -3489,7 +3489,7 @@
         },
         {
             "file": "student/gameplay/js/roll/RollOverlay.js",
-            "line": 72,
+            "line": 74,
             "description": "Updates the countdown message",
             "itemtype": "method",
             "name": "changeMessage",
@@ -3509,7 +3509,7 @@
         },
         {
             "file": "student/gameplay/js/roll/RollResultOverlay.js",
-            "line": 37,
+            "line": 39,
             "description": "sets the amount to display after a roll.",
             "itemtype": "method",
             "name": "setAmount",
@@ -3529,7 +3529,7 @@
         },
         {
             "file": "student/gameplay/js/trading/AcceptOverlay.js",
-            "line": 83,
+            "line": 85,
             "description": "Displays the name of the player that offered the trade.",
             "itemtype": "method",
             "name": "setPlayerName",
@@ -3547,7 +3547,7 @@
         },
         {
             "file": "student/gameplay/js/trading/AcceptOverlay.js",
-            "line": 92,
+            "line": 94,
             "description": "Enables or disables accepting a trade",
             "itemtype": "method",
             "name": "setAcceptEnabled",
@@ -3565,7 +3565,7 @@
         },
         {
             "file": "student/gameplay/js/trading/AcceptOverlay.js",
-            "line": 107,
+            "line": 109,
             "description": "Adds a resource to the display (what the player will have to give up)",
             "itemtype": "method",
             "name": "addGiveResource",
@@ -3588,7 +3588,7 @@
         },
         {
             "file": "student/gameplay/js/trading/AcceptOverlay.js",
-            "line": 118,
+            "line": 120,
             "description": "Adds a resource to the display (what the player will receive from the offer)",
             "itemtype": "method",
             "name": "addGetResource",
@@ -3611,7 +3611,7 @@
         },
         {
             "file": "student/gameplay/js/trading/DomesticController.js",
-            "line": 38,
+            "line": 39,
             "class": "domestic.DomesticController",
             "module": "catan.trade",
             "submodule": "catan.trade.domestic",
@@ -3619,7 +3619,7 @@
         },
         {
             "file": "student/gameplay/js/trading/DomesticController.js",
-            "line": 40,
+            "line": 41,
             "itemtype": "method",
             "name": "setResourceToSend",
             "params": [
@@ -3639,7 +3639,7 @@
         },
         {
             "file": "student/gameplay/js/trading/DomesticController.js",
-            "line": 48,
+            "line": 49,
             "itemtype": "method",
             "name": "setResourceToReceive",
             "params": [
@@ -3659,7 +3659,7 @@
         },
         {
             "file": "student/gameplay/js/trading/DomesticController.js",
-            "line": 56,
+            "line": 57,
             "itemtype": "method",
             "name": "unsetResource",
             "params": [
@@ -3679,7 +3679,7 @@
         },
         {
             "file": "student/gameplay/js/trading/DomesticController.js",
-            "line": 64,
+            "line": 65,
             "itemtype": "method",
             "name": "setPlayerToTradeWith",
             "params": [
@@ -3699,7 +3699,7 @@
         },
         {
             "file": "student/gameplay/js/trading/DomesticController.js",
-            "line": 72,
+            "line": 73,
             "description": "Increases the amount to send or receive of a resource",
             "itemtype": "method",
             "name": "increaseResourceAmount",
@@ -3720,7 +3720,7 @@
         },
         {
             "file": "student/gameplay/js/trading/DomesticController.js",
-            "line": 81,
+            "line": 82,
             "description": "Decreases the amount to send or receive of a resource",
             "itemtype": "method",
             "name": "decreaseResourceAmount",
@@ -3741,7 +3741,7 @@
         },
         {
             "file": "student/gameplay/js/trading/DomesticController.js",
-            "line": 90,
+            "line": 91,
             "description": "Sends the trade offer to the accepting player",
             "itemtype": "method",
             "name": "sendTradeOffer",
@@ -3755,7 +3755,7 @@
         },
         {
             "file": "student/gameplay/js/trading/DomesticController.js",
-            "line": 99,
+            "line": 100,
             "class": "domestic.DomesticController",
             "module": "catan.trade",
             "submodule": "catan.trade.domestic",
@@ -3763,7 +3763,7 @@
         },
         {
             "file": "student/gameplay/js/trading/DomesticController.js",
-            "line": 101,
+            "line": 102,
             "description": "Finalizes the trade between players",
             "itemtype": "method",
             "name": "acceptTrade",
@@ -3784,7 +3784,7 @@
         },
         {
             "file": "student/gameplay/js/trading/DomesticView.js",
-            "line": 42,
+            "line": 44,
             "description": "Attaches the controller to the view and builds the view on the page.",
             "itemtype": "method",
             "name": "setController",
@@ -3805,7 +3805,7 @@
         },
         {
             "file": "student/gameplay/js/trading/DomesticView.js",
-            "line": 53,
+            "line": 55,
             "description": "Sets the opponents to trade with for the player in the view. \nThis should be called on initializing the controller, and only called once.",
             "itemtype": "method",
             "name": "setPlayers",
@@ -3826,7 +3826,7 @@
         },
         {
             "file": "student/gameplay/js/trading/DomesticView.js",
-            "line": 70,
+            "line": 72,
             "description": "Turns on or off the ability to trade resources",
             "itemtype": "method",
             "name": "setResourceSelectionEnabled",
@@ -3847,7 +3847,7 @@
         },
         {
             "file": "student/gameplay/js/trading/DomesticView.js",
-            "line": 89,
+            "line": 91,
             "description": "Turns on or off the ability to select a player to trade with",
             "itemtype": "method",
             "name": "setPlayerSelectionEnabled",
@@ -3868,7 +3868,7 @@
         },
         {
             "file": "student/gameplay/js/trading/DomesticView.js",
-            "line": 102,
+            "line": 104,
             "description": "Turns on or off the ability to set amounts to trade for a reosurce",
             "itemtype": "method",
             "name": "setResourceAmountChangeEnabled",
@@ -3899,7 +3899,7 @@
         },
         {
             "file": "student/gameplay/js/trading/DomesticView.js",
-            "line": 119,
+            "line": 121,
             "description": "Displays the amount for a resource",
             "itemtype": "method",
             "name": "setResourceAmount",
@@ -3925,7 +3925,7 @@
         },
         {
             "file": "student/gameplay/js/trading/DomesticView.js",
-            "line": 132,
+            "line": 134,
             "description": "Turns on or off the ability to trade",
             "itemtype": "method",
             "name": "setTradeButtonEnabled",
@@ -3946,7 +3946,7 @@
         },
         {
             "file": "student/gameplay/js/trading/DomesticView.js",
-            "line": 145,
+            "line": 147,
             "description": "Displays the message indicating the state of the trade",
             "itemtype": "method",
             "name": "setStateMessage",
@@ -3967,7 +3967,7 @@
         },
         {
             "file": "student/gameplay/js/trading/DomesticView.js",
-            "line": 155,
+            "line": 157,
             "description": "Resets the view",
             "itemtype": "method",
             "name": "clearTradeView",
@@ -3981,7 +3981,7 @@
         },
         {
             "file": "student/gameplay/js/trading/MaritimeController.js",
-            "line": 34,
+            "line": 35,
             "description": "Called by the view when the player \"undoes\" their give selection",
             "itemtype": "method",
             "name": "unsetGiveValue",
@@ -3995,7 +3995,7 @@
         },
         {
             "file": "student/gameplay/js/trading/MaritimeController.js",
-            "line": 42,
+            "line": 43,
             "description": "Called by the view when the player \"undoes\" their get selection",
             "itemtype": "method",
             "name": "unsetGetValue",
@@ -4009,7 +4009,7 @@
         },
         {
             "file": "student/gameplay/js/trading/MaritimeController.js",
-            "line": 50,
+            "line": 51,
             "description": "Called by the view when the player selects which resource to give",
             "itemtype": "method",
             "name": "setGiveValue",
@@ -4030,7 +4030,7 @@
         },
         {
             "file": "student/gameplay/js/trading/MaritimeController.js",
-            "line": 59,
+            "line": 60,
             "description": "Called by the view when the player selects which resource to get",
             "itemtype": "method",
             "name": "setGetValue",
@@ -4051,7 +4051,7 @@
         },
         {
             "file": "student/gameplay/js/trading/MaritimeController.js",
-            "line": 72,
+            "line": 73,
             "itemtype": "method",
             "name": "makeTrade",
             "return": {
@@ -4064,7 +4064,7 @@
         },
         {
             "file": "student/gameplay/js/trading/MaritimeView.js",
-            "line": 42,
+            "line": 44,
             "description": "Attaches the controller to the view and builds the view on the page.",
             "itemtype": "method",
             "name": "setController",
@@ -4085,7 +4085,7 @@
         },
         {
             "file": "student/gameplay/js/trading/MaritimeView.js",
-            "line": 53,
+            "line": 55,
             "description": "Shows all the resources, enabling the ones the player can give, and disabling the ones he can't.",
             "itemtype": "method",
             "name": "showGiveOptions",
@@ -4103,7 +4103,7 @@
         },
         {
             "file": "student/gameplay/js/trading/MaritimeView.js",
-            "line": 62,
+            "line": 64,
             "description": "Hides all the resources except the one the player has selected.",
             "itemtype": "method",
             "name": "selectGiveOption",
@@ -4126,7 +4126,7 @@
         },
         {
             "file": "student/gameplay/js/trading/MaritimeView.js",
-            "line": 72,
+            "line": 74,
             "description": "Disables all the resources that the player could give",
             "itemtype": "method",
             "name": "hideGiveOptions",
@@ -4137,7 +4137,7 @@
         },
         {
             "file": "student/gameplay/js/trading/MaritimeView.js",
-            "line": 80,
+            "line": 82,
             "description": "Shows all the resources, enabling the ones the player can receive, and disabling the ones he can't.",
             "itemtype": "method",
             "name": "showGetOptions",
@@ -4155,7 +4155,7 @@
         },
         {
             "file": "student/gameplay/js/trading/MaritimeView.js",
-            "line": 89,
+            "line": 91,
             "description": "Hides all the resources except the one the player has selected.",
             "itemtype": "method",
             "name": "selectGetOption",
@@ -4178,7 +4178,7 @@
         },
         {
             "file": "student/gameplay/js/trading/MaritimeView.js",
-            "line": 99,
+            "line": 101,
             "description": "Disables all the resources that the player could receive",
             "itemtype": "method",
             "name": "hideGetOptions",
@@ -4189,7 +4189,7 @@
         },
         {
             "file": "student/gameplay/js/trading/MaritimeView.js",
-            "line": 107,
+            "line": 109,
             "description": "Enables or disables the button",
             "itemtype": "method",
             "name": "enableTradeButton",
@@ -4207,7 +4207,7 @@
         },
         {
             "file": "student/gameplay/js/trading/MaritimeView.js",
-            "line": 119,
+            "line": 121,
             "description": "Sets the message on the button",
             "itemtype": "method",
             "name": "setMessage",
@@ -4225,7 +4225,7 @@
         },
         {
             "file": "student/gameplay/js/turn_tracker/TrackerController.js",
-            "line": 35,
+            "line": 36,
             "description": "Called by the view when the local player ends their turn.",
             "itemtype": "method",
             "name": "endTurn",
@@ -4238,7 +4238,7 @@
         },
         {
             "file": "student/gameplay/js/turn_tracker/TrackerView.js",
-            "line": 36,
+            "line": 38,
             "description": "attaches the controller to the view and builds the view on the page.",
             "itemtype": "method",
             "name": "setController",
@@ -4258,7 +4258,7 @@
         },
         {
             "file": "student/gameplay/js/turn_tracker/TrackerView.js",
-            "line": 47,
+            "line": 49,
             "description": "sets the color to display for the local player.",
             "itemtype": "method",
             "name": "setClientColor",
@@ -4278,7 +4278,7 @@
         },
         {
             "file": "student/gameplay/js/turn_tracker/TrackerView.js",
-            "line": 63,
+            "line": 65,
             "description": "sets the name and color of a player in the player table.",
             "itemtype": "method",
             "name": "initializePlayer",
@@ -4308,7 +4308,7 @@
         },
         {
             "file": "student/gameplay/js/turn_tracker/TrackerView.js",
-            "line": 77,
+            "line": 79,
             "description": "updates the information for a player in the player table.",
             "itemtype": "method",
             "name": "updatePlayer",
@@ -4355,7 +4355,7 @@
         },
         {
             "file": "student/gameplay/js/turn_tracker/TrackerView.js",
-            "line": 96,
+            "line": 98,
             "description": "updates the game state button's message and enabled state",
             "itemtype": "method",
             "name": "updateStateView",
@@ -4380,7 +4380,7 @@
         },
         {
             "file": "student/gameplay/js/view_basics/BasicOverlay.js",
-            "line": 41,
+            "line": 43,
             "description": "sets the Controller for the view",
             "itemtype": "method",
             "name": "setController",
@@ -4400,7 +4400,7 @@
         },
         {
             "file": "student/gameplay/js/view_basics/BasicOverlay.js",
-            "line": 55,
+            "line": 57,
             "description": "makes the overlay visible",
             "itemtype": "method",
             "name": "showModal",
@@ -4413,7 +4413,7 @@
         },
         {
             "file": "student/gameplay/js/view_basics/BasicOverlay.js",
-            "line": 139,
+            "line": 141,
             "description": "makes the overlay invisible",
             "itemtype": "method",
             "name": "closeModal",
@@ -4426,7 +4426,7 @@
         },
         {
             "file": "student/gameplay/js/Core.js",
-            "line": 15,
+            "line": 17,
             "description": "Returns a newly created object that inherits properties from the\nprototype object p.  It uses the ECMAScript 5 function Object.create() if\nit is defined, and otherwise falls back to an older technique.",
             "itemtype": "method",
             "name": "inherit",
@@ -4447,7 +4447,7 @@
         },
         {
             "file": "student/gameplay/js/Core.js",
-            "line": 34,
+            "line": 36,
             "description": "This function creates a new enumerated type.  The argument object specifies\nthe names and values of each instance of the class. The return value\nis a constructor function that identifies the new class.  Note, however\nthat the constructor throws an exception: you can't use it to create new\ninstances of the type.  The returned constructor has properties that \nmap the name of a value to the value itself, and also a values array,\na foreach() iterator function",
             "itemtype": "method",
             "name": "enumeration",
@@ -4466,7 +4466,7 @@
         },
         {
             "file": "student/gameplay/js/Core.js",
-            "line": 110,
+            "line": 112,
             "description": "This makes a function that can be set as an onclick, etc.\nIf the inputFunction is a string, the return function when run will\nattempt to find that function on the inputObject. That means that it's \npossible to change the function on the inputObject without having to call\nthis again.\n\nIf the inputFunction is a function and not a string, then the function is stored.\n\nIn both cases, the returned function will take the inputFunction and run it\nwith any references to \"this\" in the inputFunction refering to the inputObject.\nThe args are passed and the \"this\" reference change is done using the \nnative JS function \"apply\".",
             "itemtype": "method",
             "name": "makeAnonymousAction",
@@ -4496,7 +4496,7 @@
         },
         {
             "file": "student/gameplay/js/StudentDefinitions.js",
-            "line": 1,
+            "line": 3,
             "description": "Definitions for object names to pass between controllers and views.\nyou reference these by calling catan.definitions.ResourceTypes and the like.",
             "class": "",
             "module": "core",
@@ -4506,35 +4506,35 @@
     "warnings": [
         {
             "message": "replacing incorrect tag: params with param",
-            "line": " student/gameplay/js/comms_box/CommView.js:17"
+            "line": " student/gameplay/js/comms_box/CommView.js:19"
         },
         {
             "message": "replacing incorrect tag: params with param",
-            "line": " student/gameplay/js/comms_box/CommView.js:17"
+            "line": " student/gameplay/js/comms_box/CommView.js:19"
         },
         {
             "message": "replacing incorrect tag: params with param",
-            "line": " student/gameplay/js/comms_box/CommView.js:17"
+            "line": " student/gameplay/js/comms_box/CommView.js:19"
         },
         {
             "message": "replacing incorrect tag: params with param",
-            "line": " student/gameplay/js/comms_box/CommView.js:17"
+            "line": " student/gameplay/js/comms_box/CommView.js:19"
         },
         {
             "message": "replacing incorrect tag: params with param",
-            "line": " student/gameplay/js/comms_box/CommView.js:17"
+            "line": " student/gameplay/js/comms_box/CommView.js:19"
         },
         {
             "message": "Missing item type",
-            "line": " student/gameplay/js/trading/DomesticController.js:38"
+            "line": " student/gameplay/js/trading/DomesticController.js:39"
         },
         {
             "message": "Missing item type",
-            "line": " student/gameplay/js/trading/DomesticController.js:99"
+            "line": " student/gameplay/js/trading/DomesticController.js:100"
         },
         {
             "message": "Missing item type\nDefinitions for object names to pass between controllers and views.\nyou reference these by calling catan.definitions.ResourceTypes and the like.",
-            "line": " student/gameplay/js/StudentDefinitions.js:1"
+            "line": " student/gameplay/js/StudentDefinitions.js:3"
         }
     ]
 }
