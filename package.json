@@ -2,6 +2,7 @@
 	"name": "byu-catan",
 	"description": "Project framework for BYU CS 340 group project",
 	"version": "1.0.1",
+	"main": "index.js",
 	"dist-tags": {
 		"latest": "1.0.1"
 	},

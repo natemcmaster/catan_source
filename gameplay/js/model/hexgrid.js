@@ -2,6 +2,10 @@
 var catan = catan || {};
 catan.models = catan.models || {};
 
+if ('undefined' !== typeof require) {
+  var core = require('../Core.js');
+}
+
 // IMPORTANT : never use "location" as a local variable. Just don't.
 //				why? because it's also a chrome variable - and so when you
 //				refer to it when you shouldn't, it won't end up as undefined,
@@ -35,11 +39,21 @@ catan.models.hexgrid = (function HexGrid_Namespace(){
         core.defineProperty(BasicHex.prototype, "vertexes");
         core.defineProperty(BasicHex.prototype, "edges");
         
-        function BasicHex(baseLocation,EdgeClass, VertexClass){
-            function makeEdge(){return EdgeClass ? new EdgeClass() : undefined}
-            function makeVertex(){return VertexClass ? new VertexClass() : undefined}
-            this.setEdges([makeEdge(),makeEdge(),makeEdge(),makeEdge(),makeEdge(),makeEdge()]);
-            this.setVertexes([makeVertex(),makeVertex(),makeVertex(),makeVertex(),makeVertex(),makeVertex()]);
+        function BasicHex(baseLocation, EdgeClass, VertexClass, edgedata, vertexdata){
+
+            // stuff I changed
+            var edges = [];
+            var vertices = [];
+            for (var i=0; i<6; i++) {
+              edges.push(EdgeClass && new EdgeClass(i, edgedata[i]));
+            }
+            for (var i=0; i<6; i++) {
+              vertices.push(VertexClass && new VertexClass(i, vertexdata[i]));
+            }
+            this.setEdges(edges)
+            this.setVertexes(vertices)
+            // end stuff I changed
+
             this.setLocation(baseLocation);			 
         };
          /**
@@ -162,7 +176,7 @@ catan.models.hexgrid = (function HexGrid_Namespace(){
     @param {hexgrid.BasicHex} hexClass The constructor for a hex. 
     */
 	var HexGrid = (function HexGridClass(){
-		function HexGrid(bWidth,lDiagonal,rDiagonal,x0,y0,hexClass){
+		function HexGrid(bWidth,lDiagonal,rDiagonal,x0,y0,hexClass, hexes){
 			// This function assumes that there is symmetry along at least two axis
 			// in otherwords bw == ld OR ld == rd OR rd == bw
 			var hexes = [];
@@ -185,7 +199,7 @@ catan.models.hexgrid = (function HexGrid_Namespace(){
 				lengths.push(length);
 				var currentLine = [];
 				for (var cellCount = 0; cellCount < length; cellCount++){
-					var hexToAdd = new hexClass(this._getLocation(offset,cellCount,count));
+					var hexToAdd = new hexClass(this._getLocation(offset,cellCount,count), hexes[count][cellCount]);
 					hexToAdd.setLocation(this._getLocation(offset,cellCount, count));
 					currentLine.push(hexToAdd);
 				}
@@ -210,8 +224,8 @@ catan.models.hexgrid = (function HexGrid_Namespace(){
                          This should be your own custom hex class, which in it's constructor call the base hex constructor
 		@return {hexgrid.HexGrid} A newly initialized HexGrid
 		*/
-        HexGrid.getRegular = function getRegularHexgrid(radius,hexClass){
-            return new HexGrid(radius, radius, radius, radius-1,radius-1,hexClass);
+        HexGrid.getRegular = function getRegularHexgrid(radius, hexClass, hexes){
+            return new HexGrid(radius, radius, radius, radius-1,radius-1,hexClass, hexes);
         }
         
         
@@ -706,4 +720,7 @@ catan.models.hexgrid = (function HexGrid_Namespace(){
 	}
 }());
 
+if ('undefined' !== typeof module) {
+  module.exports = catan.models.hexgrid;
+}
 

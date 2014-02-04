@@ -179,4 +179,7 @@ core = (function MakeCoreClass(){
 	};
 }());
 
+if ('undefined' !== typeof module) {
+  module.exports = core;
+}
 
