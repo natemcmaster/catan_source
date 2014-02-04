@@ -176,21 +176,21 @@ catan.models.hexgrid = (function HexGrid_Namespace(){
     @param {hexgrid.BasicHex} hexClass The constructor for a hex. 
     */
 	var HexGrid = (function HexGridClass(){
-		function HexGrid(bWidth,lDiagonal,rDiagonal,x0,y0,hexClass, hexes){
+		function HexGrid(bWidth,lDiagonal,rDiagonal,x0,y0,hexClass, hexdata){
 			// This function assumes that there is symmetry along at least two axis
 			// in otherwords bw == ld OR ld == rd OR rd == bw
-			var hexes = [];
+			var hexes = [] 
 			var offsets = [];
-            var lengths = [];  
+			var lengths = [];  
 			var left;
 			var right;
 			var offset;
 			this.x0 = x0;
 			this.y0 = y0;
 			var arrayHeight = lDiagonal+rDiagonal -1;
-			
+
 			for (var count = 0; count < arrayHeight; count++) {
-				
+
 				rightPad = (Math.max(0, count - lDiagonal + 1));
 				leftPad = (Math.max(0, lDiagonal - count - 1));
 				offset = leftPad;
@@ -199,16 +199,16 @@ catan.models.hexgrid = (function HexGrid_Namespace(){
 				lengths.push(length);
 				var currentLine = [];
 				for (var cellCount = 0; cellCount < length; cellCount++){
-					var hexToAdd = new hexClass(this._getLocation(offset,cellCount,count), hexes[count][cellCount]);
+					var hexToAdd = new hexClass(this._getLocation(offset,cellCount,count), hexdata[count][cellCount]);
 					hexToAdd.setLocation(this._getLocation(offset,cellCount, count));
 					currentLine.push(hexToAdd);
 				}
-				
+
 				hexes.push(currentLine);
 			}
 			this.offsets = offsets;
 			this.hexes = hexes;
-            this.linkOverlaps()
+			this.linkOverlaps()
 		};
         
         /**
