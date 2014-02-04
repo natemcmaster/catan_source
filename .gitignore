@@ -1,0 +1,11 @@
+.DS_Store
+npm-debug.log
+.*.swp
+.git
+.hg
+.lock-wscript
+.svn
+.wafpickle-*
+CVS
+Thumbs.db
+
