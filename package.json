@@ -4,7 +4,7 @@
   "version": "1.0.3",
   "main": "index.js",
   "dist-tags": {
-    "latest": "1.0.1"
+    "latest": "1.0.3"
   },
   "maintainers": "Nate McMaster <nate.mcmaster@byu.edu>",
   "repository": {
@@ -13,6 +13,7 @@
   },
   "time": {
     "1.0.0": "2014-02-01T00:14:23.673Z",
-    "1.0.1": "2014-02-01T02:19:04.236Z"
+    "1.0.1": "2014-02-01T02:19:04.236Z",
+    "1.0.3": "2014-02-04T04:16:38.288Z"
   }
 }
