@@ -1,10 +1,10 @@
 {
   "name": "byu-catan",
   "description": "Project framework for BYU CS 340 group project",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "main": "index.js",
   "dist-tags": {
-    "latest": "1.0.3"
+    "latest": "1.0.4"
   },
   "maintainers": "Nate McMaster <nate.mcmaster@byu.edu>",
   "repository": {
@@ -14,6 +14,7 @@
   "time": {
     "1.0.0": "2014-02-01T00:14:23.673Z",
     "1.0.1": "2014-02-01T02:19:04.236Z",
-    "1.0.3": "2014-02-04T04:16:38.288Z"
+    "1.0.3": "2014-02-04T04:16:38.288Z",
+    "1.0.4": "2014-02-06T06:32:39.591Z"
   }
 }
