@@ -342,12 +342,8 @@ catan.models.hexgrid = (function HexGrid_Namespace(){
          * @method getEdges
          * @return {[hexgrid.BaseContainer]} all the edges that have roads in the hexgrid - the return type is actually your custom edge class
          */
-        HexGrid.prototype.getEdges = function() {
-            return this.hexes.reduce(function(a, hexRow) {
-                return hexRow.reduce(function(a, hex) {
-                    return a.concat(hex.edges);
-                }, []);
-            }, []);
+        HexGrid.prototype.getEdges = function(){
+            return getValid(this.getHexes(),"getValidEdges")
         }
         
         /**
@@ -358,12 +354,8 @@ catan.models.hexgrid = (function HexGrid_Namespace(){
          * @method getVertexes
          * @return {[hexgrid.BaseContainer]} All the vertexes that have cities/settlements in the hexgrid - the return type is actually your custom vertex class
          */
-        HexGrid.prototype.getVertexes = function() {
-            return this.hexes.reduce(function(a, hexRow) {
-                return hexRow.reduce(function(a, hex) {
-                    return a.concat(hex.vertexes);
-                }, []);
-            }, []);
+        HexGrid.prototype.getVertexes = function(){
+            return getValid(this.getHexes(),"getValidVertexes")
         }
 		
 		return HexGrid;
