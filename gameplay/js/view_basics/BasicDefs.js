@@ -178,4 +178,6 @@ catan.definitions = {
 	
 }
 
-
+if ('undefined' !== typeof module) {
+  module.exports = catan.definitions;
+}
