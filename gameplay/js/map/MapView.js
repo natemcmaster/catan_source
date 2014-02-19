@@ -1035,7 +1035,7 @@ catan.map.View = (function makeMapView(){
 				case "road":
 					targetLayer = this.getEdgeLayer();
 					typeDef = this.getEdgeDefinition();
-					goodShape = typeDef.makeRoad(new EdgeLoc(0.5,0.5,"E"),color,outline);
+					goodShape = typeDef.makeRoad(new EdgeLoc(0.5,0.5,"SE"),color,outline);
 					break;
 				case "robber":
 					targetLayer = this.getRobberLayer();
