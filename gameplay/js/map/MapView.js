@@ -8,6 +8,10 @@
 var catan = catan || {};
 catan.map = catan.map || {};
 
+if (typeof module !== 'undefined') {
+	catan.definitions = require('../view_basics/BasicDefs.js')
+}
+
 catan.map.View = (function makeMapView(){
 
 	var Definitions = catan.definitions;
@@ -1213,4 +1217,7 @@ catan.map.View = (function makeMapView(){
 	};
 }());
 
+if (typeof module !== 'undefined') {
+	module.exports = catan.map.View
+}
 
