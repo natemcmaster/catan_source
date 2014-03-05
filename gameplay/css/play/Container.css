@@ -7,7 +7,7 @@
 /*Development Cards*/
 .card-display-area
 	{	display:inline-block;	margin:auto;
-		width:500;	height:120;	}	
+		width:500px;	height:120px;	}	
 .card-box 
 	{	width : 100px; 
 		text-align:center;	display: inline-block;	margin-bottom:10px;	}

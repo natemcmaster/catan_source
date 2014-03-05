@@ -53,7 +53,8 @@ li[draggable] > .btn
 		top:40px; 			bottom:0px;
 		overflow: hidden; 	position: absolute;	}
 .title
-	{	font-family:"Copperplate, "Copperplate Gothic Light", fantasy;";
+	{	top: 15px;
+		font-family:"Copperplate, "Copperplate Gothic Light", fantasy;";
 		font-size:35px;
 		font-weight:bold;	}
 

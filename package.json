@@ -9,7 +9,7 @@
   "maintainers": "Nate McMaster <nate.mcmaster@byu.edu>",
   "repository": {
     "type": "git",
-    "url": "http://github.com/natemcmaster/catan_source.git"
+    "url": "http://github.com/lumberjack3/catan_source.git"
   },
   "time": {
     "1.0.0": "2014-02-01T00:14:23.673Z",

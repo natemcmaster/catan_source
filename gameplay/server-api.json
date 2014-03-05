@@ -190,7 +190,7 @@
             "type": "robPlayer",
             "playerIndex": -1,
             "victimIndex": -1,
-            "robberSpot": {
+            "location": {
                 "x": "",
                 "y": ""
             }

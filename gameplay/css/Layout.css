@@ -1,27 +1,27 @@
 /*specific positioning, partitioning, sizing rules*/
 .header 
-	{ top:0; 	height:80; padding:10px; padding-left:20px;}
+	{ top:0px; height:80px; padding:10px; }
 .body 
 	{ top:80px; 	bottom:0px;}
 #left-pane 
-	{ left:0; 		width:300px;}
+	{ left:0px; 		width:300px;}
 #side-bar 
 	{ bottom: 120px;}
 #turn-tracker-pane 
 	{	bottom: 5px;	}
 
 #middle-pane 
-	{ left:300px; 	right:0;}
+	{ left:300px; 	right:0px;}
 #main-area 
 	{	left: 0px; right:155px;	overflow-y:scroll;}
 #map-pane 
-	{	top: 0; bottom: 0px;	}
+	{	top: 0px; bottom: 0px;	}
 #game-state-pane 
 	{	bottom: 5px;	}
 #right-area
 	{	top:38;	bottom: 0px;	}
 #right-pane
-	{	right:0; width:155;	overflow-y:scroll;}
+	{	right:0px; width:155px;	overflow-y:scroll;}
 #points
 	{	width:55px; height:70%; right:91px;}
 #resources
@@ -39,7 +39,7 @@
 	{	text-align:center;	margin-bottom:30;	}
 	
 #rob.modal 
-	{	width: 300;	margin-left: -180px; /* half of the width, minus scrollbar on the left (30px) */	}
+	{	width: 300px;	margin-left: -180px; /* half of the width, minus scrollbar on the left (30px) */	}
 
 /* visual stuff*/
 #right-pane, #middle-pane 
